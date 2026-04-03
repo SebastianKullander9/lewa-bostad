@@ -1,0 +1,50 @@
+@theme {
+    --font-sans: "Söhne", system-ui, sans-serif;
+
+    --color-olive-900: #2b3329;
+    --color-olive-800: #374035;
+    --color-olive-700: #455041;
+    --color-olive-600: #556350;
+    --color-olive-500: #6b7d66;
+    --color-olive-400: #8fa489;
+    --color-olive-300: #b3c2ae;
+    --color-olive-200: #d0dace;
+    --color-olive-100: #e8ede7;
+
+    --color-warm-100: #fdfcfb;
+    --color-warm-200: #f5f0eb;
+    --color-warm-300: #ede6dc;
+    --color-warm-400: #ddd4c5;
+    --color-warm-500: #c8baa5;
+
+    --spacing-xs: 4px;
+    --spacing-sm: 8px;
+    --spacing-md: 12px;
+    --spacing-lg: 16px;
+    --spacing-xl: 24px;
+    --spacing-2xl: 32px;
+    --spacing-3xl: 48px;
+
+    --font-size-xs: 11px;
+    --font-size-sm: 13px;
+    --font-size-md: 15px;
+    --font-size-lg: 17px;
+    --font-size-xl: 24px;
+    --font-size-2xl: 32px;
+    --font-size-3xl: 48px;
+    --font-size-4xl: 64px;
+    --font-size-5xl: 80px;
+}
+
+:root {
+    --color-bg-base: var(--color-olive-700);
+    --color-bg-surface: var(--color-warm-200);
+    --color-bg-sunken: var(--color-warm-300);
+    --color-text-primary: var(--color-olive-700);
+    --color-text-secondary: var(--color-olive-500);
+    --color-text-inverse: var(--color-warm-200);
+
+    --transition-fast: 150ms;
+    --transition-base: 250ms;
+    --transition-slow: 300ms;
+}

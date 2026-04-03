@@ -1,0 +1,46 @@
+@layer base {
+    body {
+        background-color: var(--color-bg-base);
+        color: var(--color-text-inverse);
+        font-family: var(--font-sans);
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        margin: 0;
+        padding: 0;
+    }
+
+    html {
+        -webkit-text-size-adjust: 100%;
+    }
+
+    *,
+    *::before,
+    *::after {
+        box-sizing: border-box;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        font-weight: 500;
+        line-height: 1.2;
+        letter-spacing: -0.02em;
+    }
+
+    button {
+        cursor: pointer;
+        background: none;
+        border: none;
+        font-family: inherit;
+    }
+
+    input,
+    textarea,
+    select {
+        font-family: inherit;
+        font-size: inherit;
+    }
+}
