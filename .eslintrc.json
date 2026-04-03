@@ -1,0 +1,26 @@
+{
+    "root": true,
+    "parser": "@typescript-eslint/parser",
+    "plugins": ["@typescript-eslint", "prettier"],
+    "extends": [
+        "next/core-web-vitals",
+        "plugin:@typescript-eslint/recommended",
+        "plugin:@typescript-eslint/strict",
+        "plugin:prettier/recommended"
+    ],
+    "rules": {
+        "prettier/prettier": "error",
+
+        "max-len": ["error", { "code": 100, "ignoreUrls": true }],
+
+        "indent": ["error", 4],
+
+        "@typescript-eslint/no-explicit-any": "error",
+
+        "simple-import-sort/imports": "error",
+        "simple-import-sort/exports": "error",
+
+        "@typescript-eslint/explicit-function-return-type": "warn",
+        "no-console": "warn"
+    }
+}
