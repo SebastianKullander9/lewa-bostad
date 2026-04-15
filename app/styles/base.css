@@ -43,4 +43,14 @@
         font-family: inherit;
         font-size: inherit;
     }
+
+    .section-x-p {
+        @apply px-xs sm:px-xs md:px-sm lg:px-sm xl:px-md;
+    }
+    .section-y-p {
+        @apply py-24;
+    }
+    .section-xy-m {
+        @apply m-xs sm:m-xs md:m-sm lg:m-sm xl:m-md;
+    }
 }
