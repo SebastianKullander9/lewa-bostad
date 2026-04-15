@@ -7,7 +7,7 @@ import InterestForm from "./InterestForm";
 
 export default function InterestSection() {
     return (
-        <section className="section-x-p h-[75vh] flex flex-col justify-center">
+        <section className="no-section-p inner-section-h flex flex-col justify-center">
             <div className="grid grid-cols-12">
                 <div className="col-span-3">
                     <p className="uppercase">Intresseanmälan</p>

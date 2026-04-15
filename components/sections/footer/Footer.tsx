@@ -5,7 +5,7 @@ import FooterBlock from "./FooterBlock";
 
 export default function Footer() {
     return (
-        <footer className="section-x-p h-[50vh] grid grid-cols-10">
+        <footer className="no-section-p h-[50vh] grid grid-cols-10">
             <div className="col-span-2 grid grid-rows-6">
                 <div className="row-start-2 row-span-4 flex flex-col flex-1">
                     <div className="text-4xl  inline-block">

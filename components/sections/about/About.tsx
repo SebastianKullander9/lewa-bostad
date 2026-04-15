@@ -8,16 +8,14 @@ import PrimaryButton from "@/components/ui/buttons/PrimaryButton";
 
 export default function About() {
     return (
-        <section className="section-x-p mb-24">
-            <div className="bg-surface w-full h-[50vh] rounded-lg p-lg text-background grid grid-cols-12">
+        <section className="section-x-p">
+            <div className="inner-section-h inner-section-style grid grid-cols-12">
                 <div className="col-span-3">
                     <p>OM OSS</p>
                 </div>
                 <div className="flex-1 flex flex-col justify-between col-span-5">
-                    <p className="text-4xl italic max-w-[35ch]">
-                        &rdquo;Jag har alltid trott att ett hem ska kännas som något byggt med
-                        omsorg, inte producerat på löpande band. Trä andas, det lever — precis som
-                        de familjer som flyttar in.&rdquo; - Erik Andersson
+                    <p className="heading-primary italic max-w-[35ch]">
+                        &rdquo;Trä andas, det lever, precis som de familjer som flyttar in.&rdquo;
                     </p>
                     <div className="flex flex-col gap-xl">
                         <p className="max-w-prose">
@@ -41,7 +39,7 @@ export default function About() {
                         alt=""
                         width={1000}
                         height={1000}
-                        className="object-contain w-auto rounded-lg"
+                        className="object-cover w-auto rounded-lg"
                     />
                 </div>
             </div>

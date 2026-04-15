@@ -2,15 +2,15 @@ import KeyFigure from "./KeyFigure";
 
 export default function KeyFigures() {
     return (
-        <section className="section-x-p h-[50vh] flex flex-col justify-center">
+        <section className="no-section-p inner-section-h flex flex-col justify-center">
             <div className="grid grid-cols-12">
                 <div className="col-span-3">
                     <p className="text-lg font-light">Koncernens nyckeltal</p>
                 </div>
                 <div className="col-span-6 col-start-4">
                     <div className="mb-36">
-                        <h2 className="text-6xl mb-lg font-normal tracking-wider">
-                            Starka resultat, hållbar tillväxt
+                        <h2 className="heading-primary mb-lg max-w-[14ch]">
+                            Starka Resultat, Hållbar Tillväxt
                         </h2>
                         <p className="max-w-prose">
                             Vi bygger framtidens boenden med fokus på kvalitet och långsiktig

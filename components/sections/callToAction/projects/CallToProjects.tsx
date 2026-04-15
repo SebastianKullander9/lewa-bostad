@@ -4,9 +4,9 @@ import kummelnashojden from "@/public/callToProjects/kummelnashojden.webp";
 
 export default function CallToProjects() {
     return (
-        <section className="min-h-dvh section-x-p flex items-center">
-            <div className="bg-sunken w-full text-text-primary p-lg rounded-md">
-                <h2 className="text-5xl font-extrabold uppercase mb-lg">Projekt</h2>
+        <section className="section-x-p">
+            <div className="inner-section-h inner-section-style">
+                <h2 className="heading-primary mb-lg">Våra Projekt</h2>
                 <p className="max-w-prose mb-md text-base font-base">
                     Vi utvecklar och förvaltar småhus och parhus för livet – oavsett om du söker ett
                     ägt eller hyrt boende. Våra projekt finns i attraktiva tillväxtområden och

@@ -8,14 +8,14 @@ import SecondaryButton from "@/components/ui/buttons/SecondaryButton";
 export default function Intro() {
     return (
         <section className="section-x-p">
-            <div className="h-[65dvh] bg-surface text-background rounded-md p-lg flex flex-row justify-between">
+            <div className="inner-section-h inner-section-style flex flex-row justify-between">
                 <div />
                 <div className="flex flex-col justify-between">
-                    <h2 className="text-6xl mb-lg font-normal tracking-wider max-w-[18ch]">
+                    <h2 className="heading-primary max-w-[18ch]">
                         Exklusiva Hem Formade i Hållbart Trä
                     </h2>
                     <div className="flex flex-col gap-md">
-                        <p className="max-w-prose mb-md text-base font-base">
+                        <p className="max-w-prose mb-md text-base">
                             Lewa Bostad utvecklar bostäder för dig som värdesätter kvalitet, design
                             och långsiktig hållbarhet. Med stor omsorg om både arkitektur och
                             materialval skapas hem med ett tydligt uttryck och hög standard.
