@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import "./styles/globals.css";
 import Header from "@/components/ui/header/Header";
+import { ViewTransitions } from "next-view-transitions";
 
 export const metadata: Metadata = {
     title: "Create Next App",
@@ -13,11 +14,13 @@ export default function RootLayout({
     children: React.ReactNode;
 }>) {
     return (
-        <html lang="en" className="antialiased">
-            <body>
-                <Header />
-                {children}
-            </body>
-        </html>
+        <ViewTransitions>
+            <html lang="en" className="antialiased">
+                <body>
+                    <Header />
+                    {children}
+                </body>
+            </html>
+        </ViewTransitions>
     );
 }

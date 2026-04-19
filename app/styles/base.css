@@ -19,6 +19,14 @@
         box-sizing: border-box;
     }
 
+    ::view-transition-old(root) {
+        animation-duration: 0.15s;
+    }
+
+    ::view-transition-new(root) {
+        animation-duration: 0.2s;
+    }
+
     h1,
     h2,
     h3,

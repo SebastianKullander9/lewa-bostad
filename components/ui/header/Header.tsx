@@ -1,6 +1,6 @@
 "use client";
 
-import Link from "next/link";
+import { Link } from "next-view-transitions";
 import Image from "next/image";
 import tree from "@/public/footer/tree-test.jpg";
 import { ChevronDown, ArrowUpRight } from "lucide-react";
@@ -21,7 +21,7 @@ export default function Header() {
     return (
         <>
             <header className="no-section-p flex flex-row justify-between h-(--header-height) pt-lg">
-                <div className="flex flex-row">
+                <Link href="/" className="flex flex-row">
                     <div>
                         <Image src={tree} alt="" width={58} height={58} />
                     </div>
@@ -29,10 +29,10 @@ export default function Header() {
                         <h1 className="text-3xl font-bold tracking-wider leading-3">LEWA</h1>
                         <h1 className="text-3xl font-bold tracking-wider">BOSTAD</h1>
                     </div>
-                </div>
+                </Link>
 
                 <nav className="flex flex-row gap-3xl text-md">
-                    <Link href="test">Projekt</Link>
+                    <Link href="vara-projekt">Våra projekt</Link>
                     <Link href="test">Om oss</Link>
                     <Link href="test">Kontakt</Link>
                 </nav>
@@ -50,8 +50,8 @@ export default function Header() {
 
             <header
                 className={`
-					fixed top-3 w-full text-background transition-opacity duration-150 z-[9999]
-					${scrollThreshold ? "opacity-100" : "opacity-0"}
+					fixed top-3 w-full text-background transition-opacity duration-150 z-9999
+					${scrollThreshold ? "opacity-100" : "opacity-0 pointer-events-none"}
 				`}
             >
                 <div className="container bg-white mx-auto rounded-md py-sm px-xl flex flex-row item items-center justify-between">
@@ -62,7 +62,7 @@ export default function Header() {
 
                     <div>
                         <nav className="flex flex-row gap-3xl text-md">
-                            <Link href="test">Projekt</Link>
+                            <Link href="vara-projekt">Våra projekt</Link>
                             <Link href="test">Om oss</Link>
                             <Link href="test">Kontakt</Link>
                         </nav>
