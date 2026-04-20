@@ -11,22 +11,20 @@ export default function About() {
         <section className="section-x-p">
             <div className="inner-section-h inner-section-style grid grid-cols-12">
                 <div className="col-span-3">
-                    <p>OM OSS</p>
+                    <p className="eyebrow">OM OSS</p>
                 </div>
                 <div className="flex-1 flex flex-col justify-between col-span-5">
-                    <p className="heading-primary italic max-w-[35ch]">
+                    <p className="quote max-w-[35ch]">
                         &rdquo;Trä andas, det lever, precis som de familjer som flyttar in.&rdquo;
                     </p>
                     <div className="flex flex-col gap-xl">
-                        <p className="max-w-prose">
+                        <p className="max-w-prose text-base">
                             Vi grundades med övertygelsen att fler människor förtjänar ett hem byggt
                             för att hålla — inte bara i år, utan i generationer. Trä är vårt
                             material, hållbarhet är vårt löfte. Erik Lindqvist och Anna Bergström
                             byggde sitt första hus tillsammans 2003, med egna händer och ett öga för
                             detaljer som fortfarande präglar varje projekt vi tar oss an. Du pratar
-                            alltid med samma person — från första visning till dagen du får dina
-                            nycklar. Inga callcenter, inga vidarebefordringar. Bara en kontakt som
-                            känner ditt hem lika väl som du gör.
+                            alltid med samma person.
                         </p>
                         <div>
                             <PrimaryButton />

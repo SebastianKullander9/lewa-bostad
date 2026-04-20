@@ -14,7 +14,7 @@ export default function Project() {
             <div className="inner-section-style flex flex-col gap-lg">
                 <div className="flex flex-col gap-xl mb-xl">
                     <p className="heading-primary">Kummelnäshöjden</p>
-                    <p className="text-lg max-w-prose">
+                    <p className="text-lg font-bo max-w-prose">
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vehicula
                         feugiat ligula. Cras non volutpat mauris. Aliquam consectetur faucibus
                         euismod. Aliquam vel feugiat urna. Nullam condimentum, nunc sit amet

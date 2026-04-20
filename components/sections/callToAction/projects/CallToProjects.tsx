@@ -1,17 +1,21 @@
 import Image from "next/image";
 import glansbaggen from "@/public/callToProjects/glansbaggen.webp";
 import kummelnashojden from "@/public/callToProjects/kummelnashojden.webp";
+import { MapPin } from "lucide-react";
 
 export default function CallToProjects() {
     return (
         <section className="section-x-p">
-            <div className="inner-section-h inner-section-style">
-                <h2 className="heading-primary mb-lg">Våra Projekt</h2>
-                <p className="max-w-prose mb-md text-base font-base">
-                    Vi utvecklar och förvaltar småhus och parhus för livet – oavsett om du söker ett
-                    ägt eller hyrt boende. Våra projekt finns i attraktiva tillväxtområden och
-                    utformas med fokus på kvalitet, hållbarhet och ett långsiktigt boende.
-                </p>
+            <div className="inner-section-h inner-section-style flex flex-col gap-3xl">
+                <div className="flex flex-col gap-xl">
+                    <h2 className="heading-primary">Våra Projekt</h2>
+                    <p className="max-w-prose text-lg leading-relaxed">
+                        Vi utvecklar och förvaltar småhus och parhus för livet – oavsett om du söker
+                        ett ägt eller hyrt boende. Våra projekt finns i attraktiva tillväxtområden
+                        och utformas med fokus på kvalitet, hållbarhet och ett långsiktigt boende.
+                    </p>
+                </div>
+
                 <div className="flex flex-row gap-lg">
                     <div className="w-1/2 relative">
                         <div className="rounded-md overflow-hidden mb-md">
@@ -21,12 +25,14 @@ export default function CallToProjects() {
                                 className="object-contain block hover:scale-103 transform transition-all duration-350"
                             />
                         </div>
-                        <p className="absolute text-text-secondary py-xs px-lg rounded-full bg-surface top-4 right-4">
+                        <p className="absolute text-sm text-text-secondary py-xs px-lg rounded-full bg-surface top-4 right-4">
                             Planerad
                         </p>
-                        <p className="text-xl font-bold tracking-widest uppercase">
-                            Glansbaggen, Tumba
-                        </p>
+                        <div className="">
+                            <div className="inline-flex flex-col">
+                                <p className="text-lg">Glansbaggen, Tumba</p>
+                            </div>
+                        </div>
                     </div>
                     <div className="w-1/2 relative">
                         <div className="rounded-md overflow-hidden mb-md">
@@ -36,12 +42,14 @@ export default function CallToProjects() {
                                 className="object-contain block hover:scale-103 transform transition-all duration-350"
                             />
                         </div>
-                        <p className="absolute text-text-secondary py-xs px-lg rounded-full bg-surface top-4 right-4">
+                        <p className="absolute text-sm text-text-secondary py-xs px-lg rounded-full bg-surface top-4 right-4">
                             Genomförd
                         </p>
-                        <p className="text-xl font-bold tracking-widest uppercase">
-                            Kummelnäshöjden, Nacka
-                        </p>
+                        <div className="">
+                            <div className="inline-flex flex-col">
+                                <p className="text-lg">Kummelnäshöjden, Nacka</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>

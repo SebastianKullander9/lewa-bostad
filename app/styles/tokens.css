@@ -1,5 +1,7 @@
 @theme {
-    --font-sans: "Söhne", system-ui, sans-serif;
+    /*--font-sans: "Söhne", system-ui, sans-serif;*/
+    --font-heading: "Overused Grotesk", sans-serif;
+    --font-body: "Plus Jakarta", sans-serif;
 
     --color-olive-900: #2b3329;
     --color-olive-800: #374035;
@@ -37,11 +39,12 @@
 
     --color-background: #455041;
     --color-surface: #f5f0eb;
+    --color-surface-muted: #f0e9e1;
     --color-sunken: #ede6dc;
     --color-text-primary: #455041;
     --color-text-secondary: #6b7d66;
     --color-text-inverse: #f5f0eb;
-    --color-border: #bbc5b8;
+    --color-border: #72846c;
 }
 
 :root {

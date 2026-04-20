@@ -2,7 +2,6 @@
     body {
         background-color: var(--color-bg-base);
         color: var(--color-text-inverse);
-        font-family: var(--font-sans);
         -webkit-font-smoothing: antialiased;
         -moz-osx-font-smoothing: grayscale;
         margin: 0;
@@ -33,9 +32,17 @@
     h4,
     h5,
     h6 {
+        font-family: var(--font-heading);
         font-weight: 500;
         line-height: 1.2;
         letter-spacing: -0.02em;
+    }
+
+    p,
+    li,
+    a {
+        font-family: var(--font-body);
+        font-weight: 300;
     }
 
     button {
@@ -68,9 +75,19 @@
         @apply bg-surface text-background rounded-md p-sm sm:p-sm md:p-md lg:p-md xl:p-lg;
     }
     .heading-primary {
-        @apply text-6xl font-normal tracking-wider;
+        font-family: var(--font-heading);
+        @apply text-6xl uppercase font-extrabold tracking-tight;
     }
     .no-section-p {
         @apply px-[calc(var(--spacing-xs)*2)] sm:px-[calc(var(--spacing-xs)*2)] md:px-[calc(var(--spacing-sm)*2)] lg:px-[calc(var(--spacing-sm)*2)] xl:px-[calc(var(--spacing-md)*2)];
+    }
+    .eyebrow {
+        @apply tracking-tight uppercase font-light text-sm;
+    }
+    .eyebrow-light {
+        @apply tracking-tight uppercase font-light text-sm;
+    }
+    .quote {
+        @apply italic text-5xl uppercase font-extrabold tracking-tight leading-snug;
     }
 }

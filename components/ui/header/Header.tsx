@@ -23,17 +23,17 @@ export default function Header() {
             <header className="no-section-p flex flex-row justify-between h-(--header-height) pt-lg">
                 <Link href="/" className="flex flex-row">
                     <div>
-                        <Image src={tree} alt="" width={58} height={58} />
+                        <Image src={tree} alt="" width={54} height={54} />
                     </div>
                     <div className="pt-md">
-                        <h1 className="text-3xl font-bold tracking-wider leading-3">LEWA</h1>
-                        <h1 className="text-3xl font-bold tracking-wider">BOSTAD</h1>
+                        <h1 className="text-3xl font-extrabold tracking-tight leading-2">LEWA</h1>
+                        <h1 className="text-3xl font-extrabold tracking-tight">BOSTAD</h1>
                     </div>
                 </Link>
 
                 <nav className="flex flex-row gap-3xl text-md">
-                    <Link href="vara-projekt">Våra projekt</Link>
-                    <Link href="test">Om oss</Link>
+                    <Link href="/vara-projekt">Våra projekt</Link>
+                    <Link href="/om-oss">Om oss</Link>
                     <Link href="test">Kontakt</Link>
                 </nav>
 
@@ -55,15 +55,15 @@ export default function Header() {
 				`}
             >
                 <div className="container bg-white mx-auto rounded-md py-sm px-xl flex flex-row item items-center justify-between">
-                    <div className="flex flex-col -space-y-3.25">
-                        <h1 className="text-xl font-bold">LEWA</h1>
-                        <h1 className="text-xl font-bold">BOSTAD</h1>
-                    </div>
+                    <Link href="/" className="flex flex-col -space-y-3.5">
+                        <h1 className="text-xl font-extrabold">LEWA</h1>
+                        <h1 className="text-xl font-extrabold">BOSTAD</h1>
+                    </Link>
 
                     <div>
                         <nav className="flex flex-row gap-3xl text-md">
-                            <Link href="vara-projekt">Våra projekt</Link>
-                            <Link href="test">Om oss</Link>
+                            <Link href="/vara-projekt">Våra projekt</Link>
+                            <Link href="/om-oss">Om oss</Link>
                             <Link href="test">Kontakt</Link>
                         </nav>
                     </div>

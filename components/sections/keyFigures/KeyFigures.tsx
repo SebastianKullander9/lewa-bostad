@@ -5,14 +5,12 @@ export default function KeyFigures() {
         <section className="no-section-p inner-section-h flex flex-col justify-center">
             <div className="grid grid-cols-12">
                 <div className="col-span-3">
-                    <p className="text-lg font-light">Koncernens nyckeltal</p>
+                    <p className="eyebrow-light text-surface">Koncernens nyckeltal</p>
                 </div>
-                <div className="col-span-6 col-start-4">
+                <div className="col-span-7 col-start-4">
                     <div className="mb-36">
-                        <h2 className="heading-primary mb-lg max-w-[14ch]">
-                            Starka Resultat, Hållbar Tillväxt
-                        </h2>
-                        <p className="max-w-prose">
+                        <h2 className="heading-primary mb-xl">Starka Resultat, Hållbar Tillväxt</h2>
+                        <p className="max-w-prose text-surface-muted text-lg">
                             Vi bygger framtidens boenden med fokus på kvalitet och långsiktig
                             hållbarhet. Våra nyckeltal visar en stabil tillväxt och ett starkt 2024.
                         </p>

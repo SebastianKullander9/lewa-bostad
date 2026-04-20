@@ -8,9 +8,9 @@ export default function Footer() {
         <footer className="no-section-p h-[50vh] grid grid-cols-10">
             <div className="col-span-2 grid grid-rows-6">
                 <div className="row-start-2 row-span-4 flex flex-col flex-1">
-                    <div className="text-4xl  inline-block">
-                        <p>LEWA</p>
-                        <p>BOSTAD</p>
+                    <div className="inline-block">
+                        <p className="heading-primary leading-13">LEWA</p>
+                        <p className="heading-primary leading-13">BOSTAD</p>
                     </div>
                     <div className="relative h-full">
                         <Image src={tree} alt="" fill className="object-contain object-left" />

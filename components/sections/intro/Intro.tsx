@@ -10,12 +10,12 @@ export default function Intro() {
         <section className="section-x-p">
             <div className="inner-section-h inner-section-style flex flex-row justify-between">
                 <div />
-                <div className="flex flex-col justify-between">
+                <div className="flex flex-col justify-between w-full">
                     <h2 className="heading-primary max-w-[18ch]">
                         Exklusiva Hem Formade i Hållbart Trä
                     </h2>
                     <div className="flex flex-col gap-md">
-                        <p className="max-w-prose mb-md text-base">
+                        <p className="max-w-prose mb-md text-base leading-relaxed">
                             Lewa Bostad utvecklar bostäder för dig som värdesätter kvalitet, design
                             och långsiktig hållbarhet. Med stor omsorg om både arkitektur och
                             materialval skapas hem med ett tydligt uttryck och hög standard.
