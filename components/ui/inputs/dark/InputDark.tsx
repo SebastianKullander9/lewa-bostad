@@ -2,7 +2,7 @@ interface InputProps {
     placeholder: string;
 }
 
-export default function Input({ placeholder }: InputProps) {
+export default function InputDark({ placeholder }: InputProps) {
     return (
         <input
             className="

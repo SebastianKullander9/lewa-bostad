@@ -34,7 +34,7 @@ export default function Header() {
                 <nav className="flex flex-row gap-3xl text-md">
                     <Link href="/vara-projekt">Våra projekt</Link>
                     <Link href="/om-oss">Om oss</Link>
-                    <Link href="test">Kontakt</Link>
+                    <Link href="/kontakt">Kontakt</Link>
                 </nav>
 
                 <div className="flex flex-row gap-xs h-fit items-center">
@@ -64,7 +64,7 @@ export default function Header() {
                         <nav className="flex flex-row gap-3xl text-md">
                             <Link href="/vara-projekt">Våra projekt</Link>
                             <Link href="/om-oss">Om oss</Link>
-                            <Link href="test">Kontakt</Link>
+                            <Link href="/kontakt">Kontakt</Link>
                         </nav>
                     </div>
 

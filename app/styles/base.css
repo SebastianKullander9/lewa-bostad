@@ -90,4 +90,28 @@
     .quote {
         @apply italic text-5xl uppercase font-extrabold tracking-tight leading-snug;
     }
+
+    @media (min-width: 640px) {
+        :root {
+            --section-y-p: var(--spacing-xs);
+        }
+    }
+
+    @media (min-width: 768px) {
+        :root {
+            --section-y-p: var(--spacing-sm);
+        }
+    }
+
+    @media (min-width: 1024px) {
+        :root {
+            --section-y-p: var(--spacing-sm);
+        }
+    }
+
+    @media (min-width: 1280px) {
+        :root {
+            --section-y-p: var(--spacing-md);
+        }
+    }
 }

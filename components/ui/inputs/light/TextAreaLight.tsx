@@ -1,16 +1,17 @@
 interface TextAreaProps {
     placeholder: string;
+    rows?: number;
 }
 
-export default function TextArea({ placeholder }: TextAreaProps) {
+export default function TextAreaLight({ placeholder, rows = 5 }: TextAreaProps) {
     return (
         <textarea
             className="
-				bg-surface text-background w-full rounded-lg px-4 py-3 transition-colors duration-300
+				bg-white text-background w-full rounded-lg px-4 py-3 transition-colors duration-300
 				hover:bg-white 
 				focus:bg-white focus:outline-none
 			"
-            rows={5}
+            rows={rows}
             placeholder={placeholder}
         />
     );
