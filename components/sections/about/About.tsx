@@ -1,57 +1,42 @@
-import Image from "next/image";
-import owner from "@/public/about/temporary-owner.jpg";
 import PrimaryButton from "@/components/ui/buttons/PrimaryButton";
-
-/*interface AboutProps {
-	
-}*/
+import interior2 from "@/public/projects/kummelnashojden/Interior_2_002.jpg";
+import Image from "next/image";
+import { ChevronDown } from "lucide-react";
 
 export default function About() {
     return (
         <section className="section-x-p">
-            <div className="inner-section-h inner-section-style grid grid-cols-12">
-                <div className="col-span-3">
-                    <p className="eyebrow">OM OSS</p>
+            <div className="inner-section-style grid grid-cols-10">
+                <div className="flex flex-col justify-between">
+                    <p className="eyebrow">Om oss</p>
+                    <ChevronDown strokeWidth={2} />
                 </div>
-                <div className="flex-1 flex flex-col justify-between col-span-5">
-                    <p className="quote max-w-[35ch]">
-                        &rdquo;Trä andas, det lever, precis som de familjer som flyttar in.&rdquo;
+                <div className="col-span-4 col-start-4 flex flex-col justify-between">
+                    <p className="heading-primary max-w-[18ch]">
+                        Vi bygger hem du faktiskt vill bo i
                     </p>
                     <div className="flex flex-col gap-xl">
-                        <p className="max-w-prose text-base">
-                            Vi grundades med övertygelsen att fler människor förtjänar ett hem byggt
-                            för att hålla — inte bara i år, utan i generationer. Trä är vårt
-                            material, hållbarhet är vårt löfte. Erik Lindqvist och Anna Bergström
-                            byggde sitt första hus tillsammans 2003, med egna händer och ett öga för
-                            detaljer som fortfarande präglar varje projekt vi tar oss an. Du pratar
-                            alltid med samma person.
+                        <p className="max-w-prose text-lg">
+                            Lewa Bostad är ett familjeägt bostadsbolag med rötterna i Mellansverige.
+                            Vi skapar noggrant utformade hem med hållbara material och ett hantverk
+                            som syns i varje detalj.
                         </p>
                         <div>
                             <PrimaryButton />
                         </div>
                     </div>
                 </div>
-                <div className="relative h-full overflow-hidden col-span-4 flex justify-end">
+
+                <div className="relative h-full overflow-hidden col-span-3 flex justify-end">
                     <Image
-                        src={owner}
+                        src={interior2}
                         alt=""
-                        width={1000}
-                        height={1000}
-                        className="object-cover w-auto rounded-lg"
+                        width={2000}
+                        height={2000}
+                        className="object-cover w-auto rounded-lg aspect-square"
                     />
                 </div>
             </div>
         </section>
     );
 }
-
-/*
-                    <div className="w-full flex justify-end">
-                        <p>OM OSS</p>
-                    </div>
-
-                    
-                    <div className="w-full flex flex-col items-end">
-
-                    </div>
-*/

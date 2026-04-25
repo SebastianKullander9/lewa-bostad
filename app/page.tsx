@@ -2,10 +2,10 @@ import CallToProjects from "@/components/sections/callToAction/projects/CallToPr
 import Intro from "@/components/sections/intro/Intro";
 import Hero from "@/components/sections/hero/Hero";
 import KeyFigures from "@/components/sections/keyFigures/KeyFigures";
-import About from "@/components/sections/about/About";
 import HowItWorks from "@/components/sections/howItWorks/HowItWorks";
 import InterestForm from "@/components/sections/interesetSection/InterestSection";
 import Footer from "@/components/sections/footer/Footer";
+import CallToAbout from "@/components/sections/callToAction/about/CallToAbout";
 
 export default function Home() {
     return (
@@ -14,7 +14,7 @@ export default function Home() {
             <Hero />
             <CallToProjects />
             <KeyFigures />
-            <About />
+            <CallToAbout />
             <InterestForm />
             <HowItWorks />
             <Footer />
