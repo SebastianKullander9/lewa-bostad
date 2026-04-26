@@ -62,6 +62,25 @@
         font-size: inherit;
     }
 
+    .hover-border {
+        position: relative;
+    }
+
+    .hover-border::after {
+        content: "";
+        position: absolute;
+        bottom: 3px;
+        left: 0;
+        width: 0;
+        height: 1px;
+        background: currentColor;
+        transition: width 0.3s ease;
+    }
+
+    .hover-border:hover::after {
+        width: 100%;
+    }
+
     .section-x-p {
         @apply px-xs sm:px-xs md:px-sm lg:px-sm xl:px-md;
     }
@@ -79,7 +98,13 @@
     }
     .heading-primary {
         font-family: var(--font-heading);
-        @apply text-6xl uppercase font-extrabold tracking-tight;
+        @apply text-4xl sm:text-4xl md:text-4xl lg:text-5xl xl:text-6xl uppercase font-extrabold tracking-tight;
+    }
+    .heading-secondary {
+        @apply text-2xl font-semibold;
+    }
+    .heading-secondary-mb {
+        @apply mb-xl;
     }
     .no-section-p {
         @apply px-[calc(var(--spacing-xs)*2)] sm:px-[calc(var(--spacing-xs)*2)] md:px-[calc(var(--spacing-sm)*2)] lg:px-[calc(var(--spacing-sm)*2)] xl:px-[calc(var(--spacing-md)*2)];

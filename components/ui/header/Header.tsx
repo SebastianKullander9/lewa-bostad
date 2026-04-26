@@ -20,7 +20,7 @@ export default function Header() {
 
     return (
         <>
-            <header className="no-section-p flex flex-row justify-between h-(--header-height) pt-lg">
+            <header className="no-section-p hidden lg:flex flex-row justify-between h-(--header-height) pt-lg items-start">
                 <Link href="/" className="flex flex-row">
                     <div>
                         <Image src={tree} alt="" width={54} height={54} />
@@ -32,9 +32,15 @@ export default function Header() {
                 </Link>
 
                 <nav className="flex flex-row gap-3xl text-md">
-                    <Link href="/vara-projekt">Våra projekt</Link>
-                    <Link href="/om-oss">Om oss</Link>
-                    <Link href="/kontakt">Kontakt</Link>
+                    <Link href="/vara-projekt" className="hover-border">
+                        Våra projekt
+                    </Link>
+                    <Link href="/om-oss" className="hover-border">
+                        Om oss
+                    </Link>
+                    <Link href="/kontakt" className="hover-border">
+                        Kontakt
+                    </Link>
                 </nav>
 
                 <div className="flex flex-row gap-xs h-fit items-center">
@@ -50,7 +56,7 @@ export default function Header() {
 
             <header
                 className={`
-					fixed top-3 w-full text-background transition-opacity duration-150 z-9999
+					hidden lg:fixed top-3 w-full text-background transition-opacity duration-150 z-9999
 					${scrollThreshold ? "opacity-100" : "opacity-0 pointer-events-none"}
 				`}
             >
@@ -62,9 +68,24 @@ export default function Header() {
 
                     <div>
                         <nav className="flex flex-row gap-3xl text-md">
-                            <Link href="/vara-projekt">Våra projekt</Link>
-                            <Link href="/om-oss">Om oss</Link>
-                            <Link href="/kontakt">Kontakt</Link>
+                            <Link
+                                href="/vara-projekt"
+                                className="hover:text-background/65 transition-colors duration-200"
+                            >
+                                Våra projekt
+                            </Link>
+                            <Link
+                                href="/om-oss"
+                                className="hover:text-background/65 transition-colors duration-200"
+                            >
+                                Om oss
+                            </Link>
+                            <Link
+                                href="/kontakt"
+                                className="hover:text-background/65 transition-colors duration-200"
+                            >
+                                Kontakt
+                            </Link>
                         </nav>
                     </div>
 

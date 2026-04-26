@@ -1,7 +1,8 @@
-import ProjectMapInteractive from "../project/ProjectMap";
+import ProjectMapInteractive from "../../ui/map/Map";
 import { Mail, Phone, MapPin } from "lucide-react";
 import ContactInfoItem from "./ContactInfoItem";
 import ContactForm from "@/components/ui/forms/ContactForm";
+import Map from "../../ui/map/Map";
 
 export default function Contact() {
     return (
@@ -35,7 +36,7 @@ export default function Contact() {
                     <ContactForm />
                 </div>
                 <div className="flex-1 aspect-square relative col-span-4 col-start-9">
-                    <ProjectMapInteractive lat={59.3293} lng={18.0686} />
+                    <Map lat={59.3293} lng={18.0686} />
                 </div>
             </div>
         </section>

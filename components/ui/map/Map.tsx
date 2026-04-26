@@ -5,15 +5,16 @@ import { useState } from "react";
 interface Props {
     lat: number;
     lng: number;
+    aspect?: string;
 }
 
-export default function ProjectMapInteractive({ lat, lng }: Props) {
+export default function Map({ lat, lng, aspect = "aspect-square" }: Props) {
     const [pos, setPos] = useState({ x: 0, y: 0 });
     const [visible, setVisible] = useState(false);
 
     return (
         <div
-            className="relative w-full aspect-square cursor-none"
+            className={`relative w-full cursor-none ${aspect}`}
             onMouseMove={(e) => {
                 const rect = e.currentTarget.getBoundingClientRect();
                 setPos({ x: e.clientX - rect.left, y: e.clientY - rect.top });
