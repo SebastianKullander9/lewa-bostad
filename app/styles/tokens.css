@@ -1,7 +1,7 @@
 @theme {
-    /*--font-sans: "Söhne", system-ui, sans-serif;*/
     --font-heading: "Overused Grotesk", sans-serif;
-    --font-body: "Plus Jakarta", sans-serif;
+    --font-geist: "Geist", sans-serif;
+    --font-geist-mono: "Geist Mono", monospace;
 
     --color-olive-900: #2b3329;
     --color-olive-800: #374035;
