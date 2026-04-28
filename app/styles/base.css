@@ -82,7 +82,7 @@
     }
 
     .section-x-p {
-        @apply px-xs sm:px-xs md:px-sm lg:px-sm xl:px-md;
+        @apply px-sm sm:px-sm md:px-sm lg:px-md xl:px-md;
     }
     .section-gap {
         @apply gap-xs sm:gap-xs md:gap-sm lg:gap-sm xl:gap-md;
@@ -94,17 +94,38 @@
         @apply min-h-[65dvh];
     }
     .inner-section-style {
-        @apply bg-surface text-background rounded-md p-sm sm:p-sm md:p-md lg:p-md xl:p-lg;
+        @apply bg-surface text-background rounded-md p-md sm:p-md md:p-md lg:p-lg xl:p-lg;
+    }
+    .inner-section-p {
+        @apply p-md sm:p-md md:p-md lg:p-lg xl:p-lg;
+    }
+    .gap-base {
+        @apply gap-md sm:gap-md md:gap-md lg:gap-lg xl:gap-lg;
+    }
+    .mt-base {
+        @apply mt-md sm:mt-md md:mt-md lg:mt-lg xl:mt-lg;
+    }
+    .mb-base {
+        @apply mb-md sm:mb-md md:mb-md lg:mb-lg xl:mb-lg;
     }
     .heading-primary {
         font-family: var(--font-heading);
         @apply text-4xl sm:text-4xl md:text-4xl lg:text-5xl xl:text-6xl uppercase font-extrabold tracking-tight;
     }
     .heading-secondary {
-        @apply text-2xl font-semibold;
+        @apply text-xl lg:text-2xl font-medium lg:font-semibold;
     }
     .heading-secondary-mb {
         @apply mb-xl;
+    }
+    .text-small {
+        @apply text-xs lg:text-sm;
+    }
+    .text-medium {
+        @apply text-sm lg:text-base;
+    }
+    .text-large {
+        @apply text-base lg:text-lg;
     }
     .no-section-p {
         @apply px-[calc(var(--spacing-xs)*2)] sm:px-[calc(var(--spacing-xs)*2)] md:px-[calc(var(--spacing-sm)*2)] lg:px-[calc(var(--spacing-sm)*2)] xl:px-[calc(var(--spacing-md)*2)];

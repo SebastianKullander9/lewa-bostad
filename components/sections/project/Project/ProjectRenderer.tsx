@@ -7,7 +7,7 @@ interface ProjectRendererProps {
 
 export default function ProjectRenderer({ projects }: ProjectRendererProps) {
     return (
-        <div className="flex flex-col gap-md">
+        <div className="flex flex-col gap-base mb-base mt-base">
             {projects.map((project, index) => (
                 <Project key={(project.title, index)} project={project} />
             ))}

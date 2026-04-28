@@ -1,6 +1,7 @@
 "use client";
 import Image from "next/image";
 import { useState } from "react";
+import { IconPinFill32 } from "nucleo-core-fill-32";
 
 interface Props {
     lat: number;
@@ -33,8 +34,7 @@ export default function Map({ lat, lng, aspect = "aspect-square" }: Props) {
 
             <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
                 <div className="relative flex items-center justify-center">
-                    <div className="absolute w-10 h-10 rounded-full bg-background/50 animate-ping [animation-duration:1.5s]" />
-                    <div className="w-4 h-4 rounded-full bg-background border-2 border-surface z-10" />
+                    <IconPinFill32 />
                 </div>
             </div>
 

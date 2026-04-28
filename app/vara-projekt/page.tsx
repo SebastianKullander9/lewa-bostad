@@ -6,7 +6,7 @@ export default function OurProjectsPage() {
     return (
         <>
             <ProjectRenderer projects={projectData} />
+            <Footer />
         </>
     );
 }
-/*<Footer />*/

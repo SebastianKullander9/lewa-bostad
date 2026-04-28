@@ -60,4 +60,5 @@
     --transition-slow: 300ms;
 
     --header-height: 150px;
+    --header-height-mobile: 65px;
 }

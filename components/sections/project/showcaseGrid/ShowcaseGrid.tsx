@@ -7,7 +7,7 @@ interface ShowcaseGridProps {
 
 export default function ShowcaseGrid({ imageUrls }: ShowcaseGridProps) {
     return (
-        <div className="w-full grid grid-cols-10 gap-lg">
+        <div className="w-full grid grid-cols-10 gap-base">
             <div className="col-span-10 lg:col-span-6 overflow-hidden rounded-md">
                 <Image
                     src={imageUrls[0]}
@@ -17,11 +17,11 @@ export default function ShowcaseGrid({ imageUrls }: ShowcaseGridProps) {
                     className="object-contain hover:scale-103 transition-transform duration-300 cursor-pointer"
                 />
             </div>
-            <div className="hidden lg:flex col-span-2 flex-col gap-lg h-full">
+            <div className="flex col-span-10 lg:col-span-2 lg:flex-col gap-base lg:h-full">
                 <ObjImage imgUrl={imageUrls[0]} />
                 <ObjImage imgUrl={imageUrls[1]} />
             </div>
-            <div className="hidden lg:flex col-span-2 flex-col gap-lg h-full">
+            <div className="hidden lg:flex col-span-2 flex-col gap-base h-full">
                 <ObjImage imgUrl={imageUrls[2]} />
                 <ObjImage imgUrl={imageUrls[3]} />
             </div>

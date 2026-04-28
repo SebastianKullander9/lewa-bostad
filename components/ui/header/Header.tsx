@@ -56,7 +56,7 @@ export default function Header() {
 
             <header
                 className={`
-					hidden lg:fixed top-3 w-full text-background transition-opacity duration-150 z-9999
+					hidden lg:flex lg:fixed top-3 w-full text-background transition-opacity duration-150 z-9999
 					${scrollThreshold ? "opacity-100" : "opacity-0 pointer-events-none"}
 				`}
             >

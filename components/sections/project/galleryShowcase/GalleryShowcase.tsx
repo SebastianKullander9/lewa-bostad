@@ -1,40 +1,37 @@
-"use client";
-
 import Image from "next/image";
-import { useState } from "react";
-import { Eye, ArrowLeft } from "lucide-react";
+import { IconPhotosFill32, IconUndoFill32 } from "nucleo-core-fill-32";
 
 interface GalleryShowcaseProps {
     imageUrls: string[];
     projectTitle: string;
+    isOpen: boolean;
+    handleOpen: () => void;
 }
 
-export default function GalleryShowcase({ imageUrls, projectTitle }: GalleryShowcaseProps) {
-    const [isOpen, setIsOpen] = useState(false);
-
-    const handleOpen = () => {
-        setIsOpen(!isOpen);
-        document.body.style.overflow = isOpen ? "" : "hidden";
-    };
-
+export default function GalleryShowcase({
+    imageUrls,
+    projectTitle,
+    isOpen,
+    handleOpen,
+}: GalleryShowcaseProps) {
     return (
         <>
             <div
                 className={`fixed z-9999 inset-0 bg-surface flex flex-col overflow-y-auto transition-all duration-150 ${isOpen ? "opacity-100 pointer-events-auto" : "opacity-0 pointer-events-none"}`}
             >
-                <div className="sticky top-0 z-9999 bg-surface border-b border-background/20 w-full flex items-center px-md mb-xl">
-                    <div className="container mx-auto p-xl text-md flex flex-row justify-between">
+                <div className="sticky top-0 z-9999 bg-surface border-b border-background/20 w-full flex items-center px-md">
+                    <div className="w-full md:container mx-auto h-15 items-center text-md flex flex-row justify-between">
                         <div
                             onClick={handleOpen}
-                            className="inline-flex flex-row items-center gap-xs hover-border cursor-pointer"
+                            className="inline-flex flex-row items-center gap-xs cursor-pointer"
                         >
-                            <ArrowLeft strokeWidth={2} size={18} />
-                            <p>Tillbaka till projekt</p>
+                            <IconUndoFill32 size={20} />
+                            <p className="text-medium hover-border">Tillbaka till projekt</p>
                         </div>
-                        <p>{projectTitle}</p>
+                        <p className="text-medium">{projectTitle}</p>
                     </div>
                 </div>
-                <div className="relative w-full flex flex-col gap-xl pb-xl">
+                <div className="relative w-full flex flex-col gap-base mb-base px-md mt-base">
                     {imageUrls.map((item) => (
                         <div key={item} className="flex justify-center">
                             <div className="rounded-md overflow-hidden inline-block">
@@ -43,7 +40,7 @@ export default function GalleryShowcase({ imageUrls, projectTitle }: GalleryShow
                                     alt=""
                                     width={1920}
                                     height={1080}
-                                    className="object-contain h-auto w-auto max-h-[80vh]"
+                                    className="object-contain aspect-auto max-h-[80vh]"
                                 />
                             </div>
                         </div>
@@ -52,10 +49,10 @@ export default function GalleryShowcase({ imageUrls, projectTitle }: GalleryShow
             </div>
             <div
                 onClick={handleOpen}
-                className="col-span-10 flex flex-row gap-xs items-center justify-start lg:justify-end hover-border cursor-pointer z-10"
+                className="col-span-10 hidden md:flex flex-row gap-xs items-center justify-start lg:justify-end cursor-pointer z-10"
             >
-                <Eye size={18} />
-                <p>Visa alla bilder</p>
+                <IconPhotosFill32 size={26} />
+                <p className="hover-border ">Visa alla bilder</p>
             </div>
         </>
     );
