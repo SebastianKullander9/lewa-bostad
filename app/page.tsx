@@ -11,13 +11,16 @@ export default function Home() {
     return (
         <div className="">
             <Intro />
-            <Hero />
-            <CallToProjects />
-            <KeyFigures />
-            <CallToAbout />
-            <InterestForm />
-            <HowItWorks />
-            <Footer />
         </div>
     );
 }
+
+/*
+<Hero />
+<CallToProjects />
+<KeyFigures />
+<CallToAbout />
+<InterestForm />
+<HowItWorks />
+<Footer />
+*/

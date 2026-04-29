@@ -94,13 +94,19 @@
         @apply min-h-[65dvh];
     }
     .inner-section-style {
-        @apply bg-surface text-background rounded-md p-md sm:p-md md:p-md lg:p-lg xl:p-lg;
+        @apply bg-surface text-background rounded-xl p-lg sm:p-lg md:p-lg lg:p-xl xl:p-xl;
     }
     .inner-section-p {
         @apply p-md sm:p-md md:p-md lg:p-lg xl:p-lg;
     }
+    .gap-small {
+        @apply gap-sm sm:gap-sm md:gap-sm lg:gap-md xl:gap-md;
+    }
     .gap-base {
         @apply gap-md sm:gap-md md:gap-md lg:gap-lg xl:gap-lg;
+    }
+    .gap-large {
+        @apply gap-lg sm:gap-lg md:gap-lg lg:gap-xl xl:gap-xl;
     }
     .mt-base {
         @apply mt-md sm:mt-md md:mt-md lg:mt-lg xl:mt-lg;

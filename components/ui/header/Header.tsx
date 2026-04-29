@@ -22,9 +22,6 @@ export default function Header() {
         <>
             <header className="no-section-p hidden lg:flex flex-row justify-between h-(--header-height) pt-lg items-start">
                 <Link href="/" className="flex flex-row">
-                    <div>
-                        <Image src={tree} alt="" width={54} height={54} />
-                    </div>
                     <div className="pt-md">
                         <h1 className="text-3xl font-extrabold tracking-tight leading-2">LEWA</h1>
                         <h1 className="text-3xl font-extrabold tracking-tight">BOSTAD</h1>

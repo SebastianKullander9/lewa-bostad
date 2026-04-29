@@ -4,40 +4,61 @@ import img2 from "@/public/intro/Glansbaggen_exterior_3_002.jpg";
 import img3 from "@/public/intro/Interior_2_002.jpg";
 import PrimaryButton from "@/components/ui/buttons/PrimaryButton";
 import SecondaryButton from "@/components/ui/buttons/SecondaryButton";
+import { IconArrowBoldDownFill32 } from "nucleo-core-fill-32";
+
+const shortText =
+    "Lewa Bostad bygger arkitektritade radhus och parhus med omsorgsfull design. Men framförallt skapar vi trivsamma kvarter där livet får ta plats – både innanför tröskeln och utanför dörren.";
+
+const longText = "Ett hem är så mycket mer än det som ryms inom fyra väggar. " + shortText;
+
+const Buttons = () => (
+    <div className="flex flex-row justify-between items-end">
+        <div className="flex flex-row gap-md">
+            <PrimaryButton label="Våra projekt" />
+            <SecondaryButton label="Läs mer" />
+        </div>
+        <IconArrowBoldDownFill32 className="rounded-xl sm:hidden" size={22} />
+    </div>
+);
+
+const Body = () => (
+    <>
+        <p className="max-w-prose mb-md text-base leading-relaxed">
+            <span className="hidden lg:inline">{longText}</span>
+            <span className="lg:hidden">{shortText}</span>
+        </p>
+        <Buttons />
+    </>
+);
+
+const imageVisibility = ["", "hidden sm:block", "hidden md:block"];
 
 export default function Intro() {
     return (
         <section className="section-x-p">
-            <div className="inner-section-h inner-section-style flex flex-row justify-between">
-                <div />
-                <div className="flex flex-col justify-between w-full">
-                    <h2 className="heading-primary max-w-[18ch]">
-                        Exklusiva Hem Formade i Hållbart Trä
+            <div className="inner-section-style grid grid-cols-24">
+                <div className="col-span-1 hidden md:flex items-end ">
+                    <IconArrowBoldDownFill32 className="rounded-xl" />
+                </div>
+                <div className="col-span-24 sm:col-span-8 col-start-0 md:col-start-7 flex flex-col justify-between">
+                    <h2 className="heading-primary max-w-[18ch] mb-12 md:mb-0">
+                        Omtanke i kvadrat
                     </h2>
-                    <div className="flex flex-col gap-md">
-                        <p className="max-w-prose mb-md text-base leading-relaxed">
-                            Lewa Bostad utvecklar bostäder för dig som värdesätter kvalitet, design
-                            och långsiktig hållbarhet. Med stor omsorg om både arkitektur och
-                            materialval skapas hem med ett tydligt uttryck och hög standard.
-                            Resultatet är moderna bostäder som kombinerar estetik, funktion och ett
-                            medvetet val av byggmaterial.
-                        </p>
-                        <div className="flex flex-row gap-md">
-                            <PrimaryButton />
-                            <SecondaryButton />
-                        </div>
+                    <div className="hidden sm:flex flex-col">
+                        <Body />
                     </div>
                 </div>
-                <div className="flex flex-col gap-md h-full">
-                    {[img1, img2, img3].map((img, i) => (
-                        <div
-                            key={i}
-                            className="relative w-80 overflow-hidden rounded-md"
-                            style={{ height: "calc((65dvh - 2rem - 16px) / 3)" }}
-                        >
-                            <Image src={img} alt="" fill className="object-cover" />
-                        </div>
-                    ))}
+                <div className="col-span-24 sm:col-span-12 sm:col-start-13 md:col-span-6 lg:col-span-4 md:col-start-19 lg:col-start-21 mb-12 md:mb-0">
+                    <div className="flex flex-col gap-base">
+                        {[img1, img2, img3].map((img, i) => (
+                            <div key={i} className={`relative aspect-5/3 ${imageVisibility[i]}`}>
+                                <Image src={img} alt="" fill className="object-cover rounded-xl" />
+                            </div>
+                        ))}
+                    </div>
+                </div>
+                <div className="sm:hidden flex-col col-span-24 mt-base">
+                    <Body />
                 </div>
             </div>
         </section>

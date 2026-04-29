@@ -6,7 +6,7 @@ interface PrimaryButtonProps {
 export default function PrimaryButton({ label, className }: PrimaryButtonProps) {
     return (
         <div
-            className={`bg-background text-surface px-4 py-2 rounded-full relative group overflow-hidden cursor-pointer ${className}`}
+            className={`bg-background text-surface px-4 py-2 md:py-1.5 rounded-full relative group overflow-hidden cursor-pointer flex items-center justify-center ${className}`}
         >
             <p className="text-small">{label}</p>
             <span
