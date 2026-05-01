@@ -11,13 +11,15 @@ export default function Home() {
     return (
         <div className="">
             <Intro />
+            <Hero />
+            <CallToProjects />
         </div>
     );
 }
 
 /*
-<Hero />
-<CallToProjects />
+
+
 <KeyFigures />
 <CallToAbout />
 <InterestForm />

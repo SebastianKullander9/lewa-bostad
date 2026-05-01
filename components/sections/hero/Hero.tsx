@@ -3,12 +3,11 @@ import HeroImage from "@/public/hero/hero2.webp";
 
 export default function Hero() {
     return (
-        <section className="h-[calc(100dvh-var(--header-height))] section-xy-m relative rounded-md overflow-hidden">
+        <section className="w-full section-x-p section-mt relative rounded-md overflow-hidden">
             <Image
                 src={HeroImage}
                 alt="Hero image with one of lewa bostads projects"
-                fill
-                className="object-cover"
+                className="object-cover aspect-auto rounded-xl"
                 priority
                 quality={85}
             />

@@ -84,6 +84,9 @@
     .section-x-p {
         @apply px-sm sm:px-sm md:px-sm lg:px-md xl:px-md;
     }
+    .section-mt {
+        @apply mt-sm sm:mt-sm md:mt-sm lg:mt-md xl:mt-md;
+    }
     .section-gap {
         @apply gap-xs sm:gap-xs md:gap-sm lg:gap-sm xl:gap-md;
     }
