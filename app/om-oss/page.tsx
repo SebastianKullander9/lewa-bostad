@@ -11,9 +11,12 @@ export default function AboutUsPage() {
     return (
         <>
             <About />
-            <History />
-            <AboutEstates />
-            <Footer />
         </>
     );
 }
+
+/*
+<History />
+<AboutEstates />
+<Footer />
+*/
