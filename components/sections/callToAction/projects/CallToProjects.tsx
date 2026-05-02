@@ -1,7 +1,6 @@
 import Image from "next/image";
 import glansbaggen from "@/public/callToProjects/glansbaggen.webp";
 import kummelnashojden from "@/public/callToProjects/kummelnashojden.webp";
-import { MapPin } from "lucide-react";
 
 export default function CallToProjects() {
     return (
@@ -50,18 +49,3 @@ export default function CallToProjects() {
         </section>
     );
 }
-
-/*
-<div className="flex flex-col gap-xl">
-
-</div>
-
-<div className="flex flex-row gap-lg">
-	<div className="w-1/2 relative">
-		
-	</div>
-	<div className="w-1/2 relative">
-		
-	</div>
-</div>
-*/

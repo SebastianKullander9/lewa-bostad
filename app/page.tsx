@@ -13,6 +13,7 @@ export default function Home() {
             <Intro />
             <Hero />
             <CallToProjects />
+            <KeyFigures />
         </div>
     );
 }
@@ -20,7 +21,7 @@ export default function Home() {
 /*
 
 
-<KeyFigures />
+
 <CallToAbout />
 <InterestForm />
 <HowItWorks />

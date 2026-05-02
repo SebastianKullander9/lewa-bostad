@@ -6,13 +6,12 @@ interface KeyFigureProps {
 
 export default function KeyFigure({ value, title, suffix }: KeyFigureProps) {
     return (
-        <div className="text-center flex flex-col gap-sm">
-            <div className="flex flex-row items-end justify-center gap-xs">
-                <p className="text-4xl font-semibold">{value}</p>
-                <p className="text-xl">{suffix}</p>
-            </div>
-            <div className="border-b border-border"></div>
-            <p className="text-surface-muted text-sm">{title}</p>
+        <div className="flex flex-col gap-xs">
+            <p className="heading-primary text-surface">
+                {value}
+                <span className="text-2xl eyebrow ml-1 ">{suffix}</span>
+            </p>
+            <p className="text-surface-muted text-xs uppercase tracking-widest">{title}</p>
         </div>
     );
 }
