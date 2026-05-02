@@ -1,6 +1,7 @@
 import Image from "next/image";
 import owner from "@/public/about/temporary-owner.jpg";
 import PrimaryButton from "@/components/ui/buttons/PrimaryButton";
+import SecondaryButton from "@/components/ui/buttons/SecondaryButton";
 
 /*interface AboutProps {
 	
@@ -8,37 +9,43 @@ import PrimaryButton from "@/components/ui/buttons/PrimaryButton";
 
 export default function CallToAbout() {
     return (
-        <section className="section-x-p">
-            <div className="inner-section-h inner-section-style grid grid-cols-12">
-                <div className="col-span-3">
-                    <p className="eyebrow">OM OSS</p>
+        <section className="no-section-p">
+            <div className="inner-section-p grid grid-cols-12 border-t border-border py-24 gap-base md:gap-y-24">
+                <div className="col-span-12 md:col-span-3 md:row-start-1">
+                    <p className="eyebrow-light text-surface">Om oss</p>
                 </div>
-                <div className="flex-1 flex flex-col justify-between col-span-5">
-                    <p className="quote max-w-[35ch]">
-                        &rdquo;Trä andas, det lever, precis som de familjer som flyttar in.&rdquo;
+                <div className="col-span-12 md:col-span-7 md:col-start-4 md:row-start-1 mb-12 md:mb-0">
+                    <p className="text-extralarge italic">
+                        &rdquo;Lewa Bostad skapar hem att trivas i – designade för vardagens små
+                        stunder och framtidens stora ögonblick.&rdquo;
                     </p>
-                    <div className="flex flex-col gap-xl">
-                        <p className="max-w-prose text-base">
-                            Vi grundades med övertygelsen att fler människor förtjänar ett hem byggt
-                            för att hålla — inte bara i år, utan i generationer. Trä är vårt
-                            material, hållbarhet är vårt löfte. Erik Lindqvist och Anna Bergström
-                            byggde sitt första hus tillsammans 2003, med egna händer och ett öga för
-                            detaljer som fortfarande präglar varje projekt vi tar oss an. Du pratar
-                            alltid med samma person.
-                        </p>
-                        <div>
-                            <PrimaryButton />
-                        </div>
-                    </div>
                 </div>
-                <div className="relative h-full overflow-hidden col-span-4 flex justify-end">
+                <div className="col-span-8 md:col-span-3 lg:col-span-2 md:row-start-2">
                     <Image
                         src={owner}
                         alt=""
                         width={1000}
                         height={1000}
-                        className="object-cover w-auto rounded-lg"
+                        className="object-cover w-full h-full rounded-xl"
                     />
+                </div>
+                <div className="col-span-12 max-w-prose md:col-span-7 md:col-start-4 md:row-start-2 flex flex-col justify-between gap-base">
+                    <p className="max-w-prose text-large">
+                        Vi grundades med övertygelsen att fler människor förtjänar ett hem byggt för
+                        att hålla — inte bara i år, utan i generationer. Trä är vårt material,
+                        hållbarhet är vårt löfte. Erik Lindqvist och Anna Bergström byggde sitt
+                        första hus tillsammans 2003, med egna händer och ett öga för detaljer som
+                        fortfarande präglar varje projekt vi tar oss an. Du pratar alltid med samma
+                        person.
+                    </p>
+                    <div className="inline-flex flex-row gap-base">
+                        <div className="min-w-30">
+                            <PrimaryButton label="Om oss" noBackground={true} />
+                        </div>
+                        <div className="min-w-30">
+                            <SecondaryButton label="Kontakta oss" noBackground={true} />
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
@@ -46,12 +53,5 @@ export default function CallToAbout() {
 }
 
 /*
-                    <div className="w-full flex justify-end">
-                        <p>OM OSS</p>
-                    </div>
 
-                    
-                    <div className="w-full flex flex-col items-end">
-
-                    </div>
 */

@@ -1,10 +1,13 @@
 interface SecondaryButtonProps {
     label: string;
+    noBackground?: boolean;
 }
 
-export default function SecondaryButton({ label }: SecondaryButtonProps) {
+export default function SecondaryButton({ label, noBackground = false }: SecondaryButtonProps) {
     return (
-        <div className="relative inline-block border border-background px-4 py-2 md:py-1.5 rounded-full group overflow-hidden cursor-pointer text-small">
+        <div
+            className={`${noBackground ? "border-surface" : " border-background"} relative inline-block border px-4 py-2 md:py-1.5 rounded-full group overflow-hidden cursor-pointer text-small`}
+        >
             <p>{label}</p>
             <span
                 className="
