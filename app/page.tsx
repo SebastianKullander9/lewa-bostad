@@ -15,6 +15,8 @@ export default function Home() {
             <CallToProjects />
             <KeyFigures />
             <CallToAbout />
+            <HowItWorks />
+            <Footer />
         </div>
     );
 }
@@ -25,6 +27,6 @@ export default function Home() {
 
 
 <InterestForm />
-<HowItWorks />
-<Footer />
+
+
 */

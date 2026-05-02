@@ -6,12 +6,12 @@ interface ContentBlockProps {
 
 export default function ContentBlock({ title, number, text }: ContentBlockProps) {
     return (
-        <div className="max-w-[20ch] flex flex-col gap-xl">
-            <div>
-                <p className="text-sm">{number}</p>
-                <p className="text-xl tracking-wider font-medium">{title}</p>
+        <div className="flex flex-col gap-base">
+            <div className="flex flex-col gap-small">
+                <p className="text-small">{number}</p>
+                <p className="text-large tracking-wider font-medium">{title}</p>
             </div>
-            <p>{text}</p>
+            <p className="text-medium">{text}</p>
         </div>
     );
 }
