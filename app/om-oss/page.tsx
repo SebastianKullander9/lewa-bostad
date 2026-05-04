@@ -11,12 +11,13 @@ export default function AboutUsPage() {
     return (
         <>
             <About />
+            <History />
         </>
     );
 }
 
 /*
-<History />
+
 <AboutEstates />
 <Footer />
 */
