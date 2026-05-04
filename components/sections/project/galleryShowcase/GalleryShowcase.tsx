@@ -34,7 +34,7 @@ export default function GalleryShowcase({
                 <div className="relative w-full flex flex-col gap-base mb-base px-md mt-base">
                     {imageUrls.map((item) => (
                         <div key={item} className="flex justify-center">
-                            <div className="rounded-md overflow-hidden inline-block">
+                            <div className="rounded-xl overflow-hidden inline-block">
                                 <Image
                                     src={item}
                                     alt=""

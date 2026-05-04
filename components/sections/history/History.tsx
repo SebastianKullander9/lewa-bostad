@@ -8,7 +8,7 @@ import { IconFlag3Fill32, IconHouseHeartFill32, IconHandshakeFill32 } from "nucl
 export default function History() {
     return (
         <section className="no-section-p my-24">
-            <div className="grid grid-cols-24">
+            <div className="inner-section-p grid grid-cols-24">
                 <div className="col-span-24 sm:col-span-6">
                     <p className="eyebrow-light text-surface">Vår historia</p>
                 </div>

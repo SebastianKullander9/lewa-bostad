@@ -2,22 +2,20 @@ import InterestForm from "./InterestForm";
 
 export default function InterestSection() {
     return (
-        <section className="no-section-p inner-section-h flex flex-col justify-center">
-            <div className="grid grid-cols-12">
-                <div className="col-span-3">
-                    <p className="eyebrow-light">Intresseanmälan</p>
+        <section className="section-x-p section-mt">
+            <div className="inner-section-p inner-section-style grid grid-cols-12 py-24 gap-y-24">
+                <div className="col-span-1">
+                    <p className="eyebrow-light text-background">Intresseanmälan</p>
                 </div>
-
-                <div className="col-span-6 max-w-5xl flex flex-col gap-xl">
-                    <p className="heading-primary">Hör Av Dig</p>
-                    <p className="max-w-prose">
-                        Oavsett om du funderar på att köpa, sälja eller bara vill veta mer om
-                        marknaden — fyll i formuläret så återkommer vi inom kort.
+                <div className="col-span-6 col-start-4">
+                    <p className="text-extralarge font-medium">
+                        Ser du dig själv här? Anmäl ditt intresse så hör vi av oss när något passar
+                        dig. Ingen bindning — bara ett första steg mot något som kanske blir ditt
+                        nästa hem.
                     </p>
-
-                    <div className="flex justify-center w-full">
-                        <InterestForm />
-                    </div>
+                </div>
+                <div className="col-span-6 col-start-4">
+                    <InterestForm />
                 </div>
             </div>
         </section>

@@ -8,7 +8,7 @@ interface ShowcaseGridProps {
 export default function ShowcaseGrid({ imageUrls }: ShowcaseGridProps) {
     return (
         <div className="w-full grid grid-cols-10 gap-base">
-            <div className="col-span-10 lg:col-span-6 overflow-hidden rounded-md">
+            <div className="col-span-10 lg:col-span-6 overflow-hidden rounded-xl">
                 <Image
                     src={imageUrls[0]}
                     alt=""

@@ -32,7 +32,7 @@ export default function AboutEstates() {
                         </div>
                     </div>
                 </div>
-                <div className="col-span-12 lg:col-span-3 mt-base mb-4 lg:mt-12">
+                <div className="col-span-12 lg:col-span-3 mt-base mb-8 mt-8 lg:mt-12">
                     <p className="heading-primary">Varför Välja Oss?</p>
                 </div>
                 <div className="col-span-12 grid grid-cols-12 gap-base ">
