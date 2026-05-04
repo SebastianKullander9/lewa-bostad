@@ -12,12 +12,8 @@ export default function AboutUsPage() {
         <>
             <About />
             <History />
+            <AboutEstates />
+            <Footer />
         </>
     );
 }
-
-/*
-
-<AboutEstates />
-<Footer />
-*/

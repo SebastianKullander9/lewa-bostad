@@ -4,7 +4,7 @@ interface ContentBlockProps {
     text: string;
 }
 
-export default function ContentBlock({ title, number, text }: ContentBlockProps) {
+export default function FeatureBlock({ title, number, text }: ContentBlockProps) {
     return (
         <div className="flex flex-col gap-base">
             <div className="flex flex-col gap-small">

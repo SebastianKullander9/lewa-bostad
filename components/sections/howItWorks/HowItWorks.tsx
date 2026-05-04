@@ -1,4 +1,4 @@
-import ContentBlock from "./ContentBlock";
+import FeatureBlock from "@/components/ui/featureBlock/FeatureBlock";
 import Image from "next/image";
 import livingRoom from "@/public/whyus/Interior_1_002.jpg";
 import PrimaryButton from "@/components/ui/buttons/PrimaryButton";
@@ -16,21 +16,21 @@ export default function HowItWorks() {
                 </div>
                 <div className="col-span-12 grid grid-cols-12 gap-base ">
                     <div className="col-span-12 sm:col-span-4 lg:col-span-3 lg:row-start-3 lg:col-start-4">
-                        <ContentBlock
+                        <FeatureBlock
                             title="Din egen mäklare"
                             number="01"
                             text="Du får en dedikerad mäklare som känner din affär utan och innan. Inget vidarebefordras, inget faller mellan stolarna."
                         />
                     </div>
                     <div className="col-span-12 sm:col-span-4 lg:col-span-3 lg:row-start-3 lg:col-start-7">
-                        <ContentBlock
+                        <FeatureBlock
                             title="Alltid tillgängliga"
                             number="02"
                             text="Frågor dyker upp på kvällar och helger. Vi svarar när det passar dig, inte bara under kontorstid."
                         />
                     </div>
                     <div className="col-span-12 sm:col-span-4 lg:col-span-3 lg:row-start-3 lg:col-start-10">
-                        <ContentBlock
+                        <FeatureBlock
                             title="Lokal kännedom på djupet"
                             number="03"
                             text="Vi vet vad grannarna betalt, vilket håll solen faller och vilken skola som ligger närmast. Den kunskapen förhandlar vi med."
