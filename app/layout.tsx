@@ -3,6 +3,7 @@ import "./styles/globals.css";
 import Header from "@/components/ui/header/Header";
 import { ViewTransitions } from "next-view-transitions";
 import HeaderMobile from "@/components/ui/header/HeaderMobile";
+import CookieBanner from "@/components/ui/cookies/CookieBanner";
 
 export const metadata: Metadata = {
     title: "Create Next App",
@@ -18,6 +19,7 @@ export default function RootLayout({
         <ViewTransitions>
             <html lang="en" className="antialiased">
                 <body>
+                    <CookieBanner />
                     <HeaderMobile />
                     <Header />
                     {children}

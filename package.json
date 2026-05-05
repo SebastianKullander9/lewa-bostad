@@ -10,6 +10,7 @@
         "lint:fix": "eslint . --ext .ts,.tsx --fix"
     },
     "dependencies": {
+        "clsx": "^2.1.1",
         "lucide-react": "^1.8.0",
         "next": "16.2.2",
         "next-view-transitions": "^0.3.5",
@@ -22,7 +23,8 @@
         "nucleo-ui-fill-18": "^1.4.0",
         "nucleo-ui-outline-18": "^1.4.0",
         "react": "19.2.4",
-        "react-dom": "19.2.4"
+        "react-dom": "19.2.4",
+        "tailwind-merge": "^3.5.0"
     },
     "devDependencies": {
         "@tailwindcss/postcss": "^4",
