@@ -19,7 +19,7 @@ export default function ContactForm() {
                 <TextAreaLight placeholder="Skriv någonting här..." rows={7} />
             </div>
             <div className="inline-block">
-                <PrimaryButton />
+                <PrimaryButton label="test" />
             </div>
         </form>
     );

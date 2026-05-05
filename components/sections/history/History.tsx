@@ -4,6 +4,7 @@
 
 import HistoryBlock from "./HistoryBlock";
 import { IconFlag3Fill32, IconHouseHeartFill32, IconHandshakeFill32 } from "nucleo-core-fill-32";
+import { cn } from "@/lib/utils";
 
 export default function History() {
     return (
@@ -12,7 +13,12 @@ export default function History() {
                 <div className="col-span-24 sm:col-span-6">
                     <p className="eyebrow-light text-surface">Vår historia</p>
                 </div>
-                <div className="col-span-24 md:col-span-14 md:col-start-7 lg:col-span-9 lg:col-start-7 flex flex-col justify-between mb-24 lg:mb-0">
+                <div
+                    className={cn(
+                        "flex flex-col justify-between mb-24 lg:mb-0",
+                        "col-span-24 md:col-span-14 md:col-start-7 lg:col-span-9 lg:col-start-7",
+                    )}
+                >
                     <p className="heading-primary">Reliwe/Bjerbo till Lewa</p>
                     <p className="max-w-prose">
                         Lewa Bostad grundades som en avknoppning ur Reliwe och Bjerbo — två

@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import Script from "next/script";
 import ConsentButton from "./ConsentButton";
 import { cn } from "@/lib/utils";
@@ -31,10 +31,12 @@ function setConsentCookie(status: "accepted" | "declined") {
 }
 
 export default function CookieBanner() {
-    const [consent, setConsent] = useState<ConsentStatus>(() => {
-        if (typeof window === "undefined") return "pending";
-        return getConsentCookie();
-    });
+    const [consent, setConsent] = useState<ConsentStatus | null>(null);
+
+    useEffect(() => {
+        // eslint-disable-next-line react-hooks/set-state-in-effect
+        setConsent(getConsentCookie());
+    }, []);
 
     const handleAccept = () => {
         setConsentCookie("accepted");

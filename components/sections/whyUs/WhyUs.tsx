@@ -3,8 +3,9 @@ import Image from "next/image";
 import livingRoom from "@/public/whyus/Interior_1_002.jpg";
 import PrimaryButton from "@/components/ui/buttons/PrimaryButton";
 import SecondaryButton from "@/components/ui/buttons/SecondaryButton";
+import { cn } from "@/lib/utils";
 
-export default function HowItWorks() {
+export default function WhyUs() {
     return (
         <section className="section-x-p">
             <div className="inner-section-style grid grid-cols-12 gap-xl">
@@ -36,7 +37,12 @@ export default function HowItWorks() {
                             text="Vi vet vad grannarna betalt, vilket håll solen faller och vilken skola som ligger närmast. Den kunskapen förhandlar vi med."
                         />
                     </div>
-                    <div className="col-span-12 lg:col-span-4 flex flex-col md:flex-row gap-base mt-lg lg:row-start-7 lg:col-start-4">
+                    <div
+                        className={cn(
+                            "flex flex-col md:flex-row gap-base mt-lg",
+                            "col-span-12 lg:col-span-4   lg:row-start-7 lg:col-start-4",
+                        )}
+                    >
                         <div className="md:max-w-35">
                             <PrimaryButton label="Kontakta oss" />
                         </div>

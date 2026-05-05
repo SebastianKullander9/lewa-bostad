@@ -3,10 +3,6 @@ import owner from "@/public/about/temporary-owner.jpg";
 import PrimaryButton from "@/components/ui/buttons/PrimaryButton";
 import SecondaryButton from "@/components/ui/buttons/SecondaryButton";
 
-/*interface AboutProps {
-	
-}*/
-
 export default function CallToAbout() {
     return (
         <section className="no-section-p">

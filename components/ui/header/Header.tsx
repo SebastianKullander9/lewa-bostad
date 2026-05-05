@@ -1,8 +1,6 @@
 "use client";
 
 import { Link } from "next-view-transitions";
-import Image from "next/image";
-import tree from "@/public/footer/tree-test.jpg";
 import { ChevronDown, ArrowUpRight } from "lucide-react";
 import { useState, useEffect } from "react";
 

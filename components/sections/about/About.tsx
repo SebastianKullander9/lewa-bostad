@@ -1,6 +1,7 @@
 import interior2 from "@/public/projects/kummelnashojden/Interior_2_002.jpg";
 import Image from "next/image";
 import { IconArrowBoldDownFill32 } from "nucleo-core-fill-32";
+import { cn } from "@/lib/utils";
 
 const Body = () => (
     <>
@@ -18,7 +19,12 @@ export default function About() {
                 <div className="col-span-1 hidden md:flex items-end ">
                     <IconArrowBoldDownFill32 className="rounded-xl" />
                 </div>
-                <div className="col-span-24 md:col-span-8 col-start-0 md:col-start-7 flex flex-col justify-between">
+                <div
+                    className={cn(
+                        "flex flex-col justify-between",
+                        "col-span-24 col-start-0 md:col-span-8 md:col-start-7",
+                    )}
+                >
                     <p className="heading-primary mb-12 md:mb-0">
                         Vi bygger hem du faktiskt vill bo i
                     </p>

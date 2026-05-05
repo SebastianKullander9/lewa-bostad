@@ -1,6 +1,7 @@
 import Image from "next/image";
 import glansbaggen from "@/public/callToProjects/glansbaggen.webp";
 import kummelnashojden from "@/public/callToProjects/kummelnashojden.webp";
+import StatusBadge from "./StatusBadge";
 
 export default function CallToProjects() {
     return (
@@ -22,9 +23,7 @@ export default function CallToProjects() {
                             className="object-contain block hover:scale-103 transform transition-all duration-350"
                         />
                     </div>
-                    <p className="absolute text-small text-text-secondary py-xs px-lg rounded-full bg-surface top-2 right-2 md:top-3 md:right-3 lg:top-4 lg:right-4">
-                        Planerad
-                    </p>
+                    <StatusBadge label="planerad" />
                     <div>
                         <p className="text-large font-medium">Glansbaggen, Tumba</p>
                     </div>
@@ -37,9 +36,7 @@ export default function CallToProjects() {
                             className="object-contain block hover:scale-103 transform transition-all duration-350"
                         />
                     </div>
-                    <p className="absolute text-small text-text-secondary py-xs px-lg rounded-full bg-surface top-2 right-2 md:top-3 md:right-3 lg:top-4 lg:right-4">
-                        Genomförd
-                    </p>
+                    <StatusBadge label="genomförd" />
                     <div>
                         <p className="text-large font-medium">Kummelnäshöjden, Nacka</p>
                     </div>
