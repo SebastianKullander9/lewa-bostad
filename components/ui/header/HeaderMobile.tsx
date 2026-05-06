@@ -1,16 +1,14 @@
 "use client";
 
 import { useState } from "react";
-import Link from "next/link";
+import { usePathname } from "next/navigation";
 import Hamburger from "../hamburger/Hamburger";
-import { IconGridFill18, IconCircleInfoFill18, IconContactsFill18 } from "nucleo-ui-fill-18";
-
-/*interface HeaderMobileProps {
-	
-}*/
+import { Link } from "next-view-transitions";
+import { navLinks } from "@/lib/navigation";
 
 export default function HeaderMobile() {
     const [isOpen, setIsOpen] = useState(false);
+    const pathname = usePathname();
 
     return (
         <>
@@ -46,29 +44,19 @@ export default function HeaderMobile() {
                         </div>
                     </div>
                 </header>
-                <div className="inner-section-p w-full h-[calc(100vh-var(--header-height-mobile)*2)] flex items-center ">
-                    <div className="flex flex-col gap-xl text-sm">
-                        <div className="flex flex-row items-center gap-sm">
-                            <div className="bg-surface p-xs rounded-lg">
-                                <IconGridFill18 className="text-background" />
-                            </div>
-
-                            <p className="text-surface">Våra projekt</p>
-                        </div>
-                        <div className="flex flex-row items-center gap-sm">
-                            <div className="bg-surface p-xs rounded-lg">
-                                <IconCircleInfoFill18 className="text-background" />
-                            </div>
-
-                            <p className="text-surface">Om oss</p>
-                        </div>
-                        <div className="flex flex-row items-center gap-sm">
-                            <div className="bg-surface p-xs rounded-lg">
-                                <IconContactsFill18 className="text-background" />
-                            </div>
-
-                            <p className="text-surface">Kontakt</p>
-                        </div>
+                <div className="inner-section-p w-full h-[calc(100vh-var(--header-height-mobile)*2)] flex items-center">
+                    <div className="flex flex-col gap-xl heading-primary">
+                        {navLinks
+                            .filter((link) => link.href !== pathname)
+                            .map((link) => (
+                                <Link
+                                    key={link.href}
+                                    href={link.href}
+                                    onClick={() => setIsOpen(false)}
+                                >
+                                    {link.label}
+                                </Link>
+                            ))}
                     </div>
                 </div>
             </div>

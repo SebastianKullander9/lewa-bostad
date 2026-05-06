@@ -5,6 +5,7 @@ import img3 from "@/public/intro/Interior_2_002.jpg";
 import PrimaryButton from "@/components/ui/buttons/PrimaryButton";
 import SecondaryButton from "@/components/ui/buttons/SecondaryButton";
 import { IconArrowBoldDownFill32 } from "nucleo-core-fill-32";
+import { Link } from "next-view-transitions";
 
 const shortText =
     "Lewa Bostad bygger arkitektritade radhus och parhus med omsorgsfull design. Men framförallt skapar vi trivsamma kvarter där livet får ta plats – både innanför tröskeln och utanför dörren.";
@@ -14,8 +15,12 @@ const longText = "Ett hem är så mycket mer än det som ryms inom fyra väggar.
 const Buttons = () => (
     <div className="flex flex-row justify-between items-end">
         <div className="flex flex-row gap-md">
-            <PrimaryButton label="Våra projekt" />
-            <SecondaryButton label="Läs mer" />
+            <Link href="/vara-projekt">
+                <PrimaryButton label="Våra projekt" />
+            </Link>
+            <Link href="/om-oss">
+                <SecondaryButton label="Läs mer" />
+            </Link>
         </div>
         <IconArrowBoldDownFill32 className="rounded-xl sm:hidden" size={22} />
     </div>

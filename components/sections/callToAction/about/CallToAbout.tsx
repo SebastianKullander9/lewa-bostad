@@ -2,6 +2,7 @@ import Image from "next/image";
 import owner from "@/public/about/temporary-owner.jpg";
 import PrimaryButton from "@/components/ui/buttons/PrimaryButton";
 import SecondaryButton from "@/components/ui/buttons/SecondaryButton";
+import { Link } from "next-view-transitions";
 
 export default function CallToAbout() {
     return (
@@ -35,12 +36,12 @@ export default function CallToAbout() {
                         person.
                     </p>
                     <div className="inline-flex flex-row gap-base">
-                        <div className="min-w-30">
+                        <Link href="/om-oss" className="min-w-30">
                             <PrimaryButton label="Om oss" noBackground={true} />
-                        </div>
-                        <div className="min-w-30">
+                        </Link>
+                        <Link href="/kontakt" className="min-w-30">
                             <SecondaryButton label="Kontakta oss" noBackground={true} />
-                        </div>
+                        </Link>
                     </div>
                 </div>
             </div>
