@@ -1,8 +1,9 @@
+import { StaticImageData } from "next/image";
 import Image from "next/image";
 import { IconPhotosFill32, IconUndoFill32 } from "nucleo-core-fill-32";
 
 interface GalleryShowcaseProps {
-    imageUrls: string[];
+    imageUrls: StaticImageData[];
     projectTitle: string;
     isOpen: boolean;
     handleOpen: () => void;
@@ -32,8 +33,8 @@ export default function GalleryShowcase({
                     </div>
                 </div>
                 <div className="relative w-full flex flex-col gap-base mb-base px-md mt-base">
-                    {imageUrls.map((item) => (
-                        <div key={item} className="flex justify-center">
+                    {imageUrls.map((item, index) => (
+                        <div key={index} className="flex justify-center">
                             <div className="rounded-xl overflow-hidden inline-block">
                                 <Image
                                     src={item}
@@ -41,6 +42,8 @@ export default function GalleryShowcase({
                                     width={1920}
                                     height={1080}
                                     className="object-contain aspect-auto max-h-[80vh]"
+                                    placeholder="blur"
+                                    sizes="100vw"
                                 />
                             </div>
                         </div>

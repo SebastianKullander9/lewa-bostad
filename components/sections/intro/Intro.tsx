@@ -64,6 +64,7 @@ export default function Intro() {
                                     alt=""
                                     fill
                                     className="object-cover rounded-xl"
+                                    sizes="(max-width: 640px) 80vw, (max-width: 768px) 45vw, 20vw"
                                 />
                             </div>
                         ))}

@@ -1,3 +1,5 @@
+import { StaticImageData } from "next/image";
+
 export type ObjectInfoType = {
     buildStart: string;
     moveIn: string;
@@ -10,8 +12,8 @@ export type ObjectInfoType = {
 export type ProjectType = {
     title: string;
     introText: string;
-    showcaseImages: string[];
-    galleryImages: string[];
+    showcaseImages: StaticImageData[];
+    galleryImages: StaticImageData[];
     objectInfo: ObjectInfoType;
     aboutText: string;
     placement: string[];

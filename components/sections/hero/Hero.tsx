@@ -11,6 +11,7 @@ export default function Hero() {
                 priority
                 placeholder="blur"
                 quality={85}
+                sizes="100vw"
             />
         </section>
     );

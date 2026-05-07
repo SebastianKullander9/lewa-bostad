@@ -16,6 +16,7 @@ export default function WhyUs() {
                         alt=""
                         className="w-full object-contain rounded-xl"
                         placeholder="blur"
+                        sizes="100vw"
                     />
                 </div>
                 <div className="col-span-12 lg:col-span-3 mt-base mb-4 lg:mt-12">

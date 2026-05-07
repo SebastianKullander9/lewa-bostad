@@ -36,8 +36,6 @@ export default function About() {
                     <Image
                         src={interior2}
                         alt=""
-                        width={2000}
-                        height={2000}
                         priority
                         placeholder="blur"
                         className="object-cover w-auto rounded-xl aspect-square"

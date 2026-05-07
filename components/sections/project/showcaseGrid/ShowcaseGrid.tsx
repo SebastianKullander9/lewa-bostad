@@ -1,8 +1,10 @@
+import { StaticImageData } from "next/image";
+
 import Image from "next/image";
 import ObjImage from "./ObjImage";
 
 interface ShowcaseGridProps {
-    imageUrls: string[];
+    imageUrls: StaticImageData[];
     priority: boolean;
 }
 
@@ -13,10 +15,10 @@ export default function ShowcaseGrid({ imageUrls, priority }: ShowcaseGridProps)
                 <Image
                     src={imageUrls[0]}
                     alt=""
-                    width={1920}
-                    height={1920}
                     priority={priority}
+                    placeholder="blur"
                     className="object-contain hover:scale-103 transition-transform duration-300 cursor-pointer"
+                    sizes="(max-width: 1024px) 100vw, 60vw"
                 />
             </div>
             <div className="flex col-span-10 lg:col-span-2 lg:flex-col gap-base lg:h-full">

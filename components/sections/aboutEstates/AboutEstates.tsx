@@ -17,6 +17,7 @@ export default function AboutEstates() {
                             height={2500}
                             className="object-cover rounded-xl"
                             placeholder="blur"
+                            sizes="(max-width: 768px) 100vw, 67vw"
                         />
                     </div>
                     <div className="col-span-12 md:col-span-4 flex flex-row md:flex-col gap-base">
@@ -27,6 +28,7 @@ export default function AboutEstates() {
                                 fill
                                 className="object-cover object-bottom/5 rounded-xl"
                                 placeholder="blur"
+                                sizes="(max-width: 768px) 50vw, 33vw"
                             />
                         </div>
                         <div className="w-full relative md:flex-2 aspect-square md:aspect-auto">
@@ -36,6 +38,7 @@ export default function AboutEstates() {
                                 fill
                                 className="object-cover rounded-xl"
                                 placeholder="blur"
+                                sizes="(max-width: 768px) 50vw, 33vw"
                             />
                         </div>
                     </div>

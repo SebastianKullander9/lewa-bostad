@@ -22,6 +22,7 @@ export default function CallToProjects() {
                             alt=""
                             className="object-contain block hover:scale-103 transform transition-all duration-350"
                             placeholder="blur"
+                            sizes="(max-width: 768px) 100vw, 50vw"
                         />
                     </div>
                     <StatusBadge label="planerad" />
