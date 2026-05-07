@@ -5,19 +5,18 @@ import { usePathname } from "next/navigation";
 import Hamburger from "../hamburger/Hamburger";
 import { Link } from "next-view-transitions";
 import { navLinks } from "@/lib/navigation";
+import Logo from "./Logo";
 
 export default function HeaderMobile() {
     const [isOpen, setIsOpen] = useState(false);
     const pathname = usePathname();
+    const logoProps = { pathname, setIsOpen, isOpen };
 
     return (
         <>
             <header className="lg:hidden sticky top-0 no-section-p bg-background z-9999 h-(--header-height-mobile)">
                 <div className="inner-section-p w-full flex items-center justify-between ">
-                    <Link href="/" className="flex flex-col -space-y-3.5">
-                        <h1 className="text-xl font-extrabold">LEWA</h1>
-                        <h1 className="text-xl font-extrabold">BOSTAD</h1>
-                    </Link>
+                    <Logo {...logoProps} />
                     <div className="flex items-center">
                         <button type="button" onClick={() => setIsOpen(!isOpen)}>
                             <Hamburger />
@@ -30,10 +29,7 @@ export default function HeaderMobile() {
             >
                 <header className="inner-section-p h-(--header-height-mobile)">
                     <div className="w-full flex items-center justify-between">
-                        <Link href="/" className="flex flex-col -space-y-3.5">
-                            <h1 className="text-xl font-extrabold">LEWA</h1>
-                            <h1 className="text-xl font-extrabold">BOSTAD</h1>
-                        </Link>
+                        <Logo {...logoProps} />
                         <div className="flex items-center">
                             <button type="button" onClick={() => setIsOpen(!isOpen)}>
                                 <div className="relative w-5.5 h-5.5">

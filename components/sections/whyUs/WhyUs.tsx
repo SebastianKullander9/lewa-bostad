@@ -1,6 +1,6 @@
 import FeatureBlock from "@/components/ui/featureBlock/FeatureBlock";
 import Image from "next/image";
-import livingRoom from "@/public/whyus/Interior_1_002.jpg";
+import livingRoom from "@/public/whyus/Interior_1_002.webp";
 import PrimaryButton from "@/components/ui/buttons/PrimaryButton";
 import SecondaryButton from "@/components/ui/buttons/SecondaryButton";
 import { cn } from "@/lib/utils";

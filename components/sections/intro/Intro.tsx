@@ -1,7 +1,7 @@
 import Image from "next/image";
-import img1 from "@/public/intro/Interior_1_002.jpg";
-import img2 from "@/public/intro/Glansbaggen_exterior_3_002.jpg";
-import img3 from "@/public/intro/Interior_2_002.jpg";
+import img1 from "@/public/intro/Interior_1_002.webp";
+import img2 from "@/public/intro/Glansbaggen_exterior_3_002.webp";
+import img3 from "@/public/intro/Interior_2_002.webp";
 import PrimaryButton from "@/components/ui/buttons/PrimaryButton";
 import SecondaryButton from "@/components/ui/buttons/SecondaryButton";
 import { IconArrowBoldDownFill32 } from "nucleo-core-fill-32";

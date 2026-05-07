@@ -1,6 +1,6 @@
-import estate from "@/public/aboutEstates/Exterior_2_Wood_002.jpg";
-import estate2 from "@/public/aboutEstates/Glansbaggen_Vardagsrum_001.jpg";
-import estate4 from "@/public/aboutEstates/Interior_7_002.jpg";
+import estate from "@/public/aboutEstates/Exterior_2_Wood_002.webp";
+import estate2 from "@/public/aboutEstates/Glansbaggen_Vardagsrum_001.webp";
+import estate4 from "@/public/aboutEstates/Interior_7_002.webp";
 import Image from "next/image";
 import FeatureBlock from "@/components/ui/featureBlock/FeatureBlock";
 

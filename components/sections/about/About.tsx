@@ -1,4 +1,4 @@
-import interior2 from "@/public/projects/kummelnashojden/Interior_2_002.jpg";
+import interior2 from "@/public/projects/kummelnashojden/Interior_2_002.webp";
 import Image from "next/image";
 import { IconArrowBoldDownFill32 } from "nucleo-core-fill-32";
 import { cn } from "@/lib/utils";
