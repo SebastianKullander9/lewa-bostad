@@ -9,6 +9,7 @@ export default function Hero() {
                 alt="Hero image with one of lewa bostads projects"
                 className="object-cover aspect-auto rounded-xl"
                 priority
+                placeholder="blur"
                 quality={85}
             />
         </section>

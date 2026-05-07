@@ -18,9 +18,10 @@ import PrimaryButton from "@/components/ui/buttons/PrimaryButton";
 
 interface ProjectProps {
     project: ProjectType;
+    priority: boolean;
 }
 
-export default function Project({ project }: ProjectProps) {
+export default function Project({ project, priority }: ProjectProps) {
     const [isOpen, setIsOpen] = useState(false);
     const { title, introText, showcaseImages, galleryImages, objectInfo, aboutText } = project;
 
@@ -55,7 +56,7 @@ export default function Project({ project }: ProjectProps) {
                         />
                     </div>
                 </div>
-                <ShowcaseGrid imageUrls={showcaseImages} />
+                <ShowcaseGrid imageUrls={showcaseImages} priority={priority} />
                 <button onClick={handleOpen} className="md:hidden mt-md">
                     <PrimaryButton label="Visa alla 11 bilder" className="text-center" />
                 </button>

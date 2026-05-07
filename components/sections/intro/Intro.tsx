@@ -57,7 +57,14 @@ export default function Intro() {
                     <div className="flex flex-col gap-base">
                         {[img1, img2, img3].map((img, i) => (
                             <div key={i} className={`relative aspect-5/3 ${imageVisibility[i]}`}>
-                                <Image src={img} alt="" fill className="object-cover rounded-xl" />
+                                <Image
+                                    priority
+                                    placeholder="blur"
+                                    src={img}
+                                    alt=""
+                                    fill
+                                    className="object-cover rounded-xl"
+                                />
                             </div>
                         ))}
                     </div>

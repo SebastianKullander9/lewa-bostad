@@ -10,7 +10,7 @@ import Logo from "./Logo";
 export default function HeaderMobile() {
     const [isOpen, setIsOpen] = useState(false);
     const pathname = usePathname();
-    const logoProps = { pathname, setIsOpen, isOpen };
+    const logoProps = { pathname, setIsOpen };
 
     return (
         <>

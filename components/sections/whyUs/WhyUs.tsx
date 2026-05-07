@@ -11,7 +11,12 @@ export default function WhyUs() {
         <section className="section-x-p">
             <div className="inner-section-style grid grid-cols-12 gap-xl">
                 <div className="col-span-12 relative">
-                    <Image src={livingRoom} alt="" className="w-full object-contain rounded-xl" />
+                    <Image
+                        src={livingRoom}
+                        alt=""
+                        className="w-full object-contain rounded-xl"
+                        placeholder="blur"
+                    />
                 </div>
                 <div className="col-span-12 lg:col-span-3 mt-base mb-4 lg:mt-12">
                     <p className="heading-primary">Varför Välja Oss?</p>
