@@ -22,6 +22,8 @@ export default function CallToProjects() {
                             alt=""
                             className="object-contain block hover:scale-103 transform transition-all duration-350"
                             placeholder="blur"
+                            width={1280}
+                            height={720}
                             sizes="(max-width: 768px) 100vw, 50vw"
                         />
                     </div>
@@ -37,6 +39,8 @@ export default function CallToProjects() {
                             alt=""
                             className="object-contain block hover:scale-103 transform transition-all duration-350"
                             placeholder="blur"
+                            width={1280}
+                            height={720}
                             sizes="(max-width: 768px) 100vw, 50vw"
                         />
                     </div>

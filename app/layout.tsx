@@ -4,6 +4,13 @@ import Header from "@/components/ui/header/Header";
 import { ViewTransitions } from "next-view-transitions";
 import HeaderMobile from "@/components/ui/header/HeaderMobile";
 import CookieBanner from "@/components/ui/cookies/CookieBanner";
+import { Geist } from "next/font/google";
+
+const geist = Geist({
+    subsets: ["latin"],
+    weight: ["100", "400", "700", "900"],
+    display: "swap",
+});
 
 export const metadata: Metadata = {
     title: "Lewa Bostad",
@@ -18,7 +25,7 @@ export default function RootLayout({
 }>) {
     return (
         <ViewTransitions>
-            <html lang="sv" className="antialiased">
+            <html lang="sv" className={`antialiased ${geist.className}`}>
                 <body>
                     <CookieBanner />
                     <HeaderMobile />
