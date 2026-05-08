@@ -25,9 +25,9 @@ export default function About() {
                         "col-span-24 col-start-0 md:col-span-8 md:col-start-7",
                     )}
                 >
-                    <p className="heading-primary mb-12 md:mb-0">
+                    <h1 className="heading-primary mb-12 md:mb-0">
                         Vi bygger hem du faktiskt vill bo i
-                    </p>
+                    </h1>
                     <div className="hidden md:block">
                         <Body />
                     </div>

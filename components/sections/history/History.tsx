@@ -19,7 +19,7 @@ export default function History() {
                         "col-span-24 md:col-span-14 md:col-start-7 lg:col-span-9 lg:col-start-7",
                     )}
                 >
-                    <p className="heading-primary">Reliwe/Bjerbo till Lewa</p>
+                    <h2 className="heading-primary">Reliwe/Bjerbo till Lewa</h2>
                     <p className="max-w-prose">
                         Lewa Bostad grundades som en avknoppning ur Reliwe och Bjerbo — två
                         etablerade aktörer inom byggsektorn. Med ett tydligt fokus på boendekvalitet

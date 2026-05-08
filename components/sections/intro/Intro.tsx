@@ -46,9 +46,9 @@ export default function Intro() {
                     <IconArrowBoldDownFill32 className="rounded-xl" />
                 </div>
                 <div className="col-span-24 sm:col-span-8 col-start-0 md:col-start-7 flex flex-col justify-between">
-                    <h2 className="heading-primary max-w-[18ch] mb-12 md:mb-0">
+                    <h1 className="heading-primary max-w-[18ch] mb-12 md:mb-0">
                         Omtanke i kvadrat
-                    </h2>
+                    </h1>
                     <div className="hidden sm:flex flex-col">
                         <Body />
                     </div>

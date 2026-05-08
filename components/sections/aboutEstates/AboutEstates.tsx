@@ -44,7 +44,7 @@ export default function AboutEstates() {
                     </div>
                 </div>
                 <div className="col-span-12 lg:col-span-3 mt-base mb-8 mt-8 lg:mt-12">
-                    <p className="heading-primary">Hem Vi är Stolta Över</p>
+                    <h1 className="heading-primary">Hem Vi är Stolta Över</h1>
                 </div>
                 <div className="col-span-12 grid grid-cols-12 gap-base ">
                     <div className="col-span-12 sm:col-span-4 lg:col-span-3 lg:row-start-3 lg:col-start-4">

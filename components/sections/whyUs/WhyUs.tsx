@@ -20,7 +20,7 @@ export default function WhyUs() {
                     />
                 </div>
                 <div className="col-span-12 lg:col-span-3 mt-base mb-4 lg:mt-12">
-                    <p className="heading-primary">Varför Välja Oss?</p>
+                    <h2 className="heading-primary">Varför Välja Oss?</h2>
                 </div>
                 <div className="col-span-12 grid grid-cols-12 gap-base ">
                     <div className="col-span-12 sm:col-span-4 lg:col-span-3 lg:row-start-3 lg:col-start-4">

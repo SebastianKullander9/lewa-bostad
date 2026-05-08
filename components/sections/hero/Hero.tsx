@@ -11,7 +11,7 @@ export default function Hero() {
                 fetchPriority="high"
                 priority
                 placeholder="blur"
-                quality={85}
+                quality={75}
                 width={2560}
                 height={1440}
                 sizes="100vw"

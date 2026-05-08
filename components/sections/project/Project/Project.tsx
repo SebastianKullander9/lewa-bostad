@@ -24,6 +24,7 @@ interface ProjectProps {
 export default function Project({ project, priority }: ProjectProps) {
     const [isOpen, setIsOpen] = useState(false);
     const { title, introText, showcaseImages, galleryImages, objectInfo, aboutText } = project;
+    const TitleTag = priority ? "h1" : "h2";
 
     const objInfoItems = [
         { title: "Byggstart", value: objectInfo.buildStart, Icon: IconCalendarFill32 },
@@ -44,7 +45,7 @@ export default function Project({ project, priority }: ProjectProps) {
             <div className="inner-section-style flex flex-col gap-md">
                 <div className="flex flex-col gap-base lg:gap-0 lg:flex-row justify-between">
                     <div className="flex flex-col gap-base">
-                        <p className="heading-primary">{title}</p>
+                        <TitleTag className="heading-primary">{title}</TitleTag>
                         <p className="text-large font-bo max-w-prose">{introText}</p>
                     </div>
                     <div className="flex flex-col justify-end z-9999">
@@ -64,7 +65,7 @@ export default function Project({ project, priority }: ProjectProps) {
                 {/* MOBILE */}
                 <div className="flex flex-col gap-lg lg:hidden">
                     <div>
-                        <p className="heading-secondary mt-md">Objektinfo</p>
+                        <h3 className="heading-secondary mt-md">Objektinfo</h3>
                         <div className="grid grid-cols-2 md:grid-cols-4 gap-xl mt-base">
                             {objInfoItems.map((item) => (
                                 <ObjInfo key={item.title} {...item} />
@@ -72,7 +73,7 @@ export default function Project({ project, priority }: ProjectProps) {
                         </div>
                     </div>
                     <div>
-                        <p className="heading-secondary mb-base">Läge</p>
+                        <h3 className="heading-secondary mb-base">Läge</h3>
                         <Map
                             lat={59.36}
                             lng={18.15}
@@ -80,7 +81,7 @@ export default function Project({ project, priority }: ProjectProps) {
                         />
                     </div>
                     <div>
-                        <p className="heading-secondary mb-base">Om projektet</p>
+                        <h3 className="heading-secondary mb-base">Om projektet</h3>
                         <p className="text-large max-w-prose leading-relaxed">{aboutText}</p>
                     </div>
                 </div>
@@ -89,7 +90,7 @@ export default function Project({ project, priority }: ProjectProps) {
                 <div className="hidden lg:grid grid-cols-10 gap-lg">
                     <div className="col-span-6 flex flex-col gap-lg">
                         <div>
-                            <p className="heading-secondary">Objektinfo</p>
+                            <h3 className="heading-secondary">Objektinfo</h3>
                             <div className="grid grid-cols-3 gap-xl mt-base">
                                 {objInfoItems.map((item) => (
                                     <ObjInfo key={item.title} {...item} />
@@ -97,12 +98,12 @@ export default function Project({ project, priority }: ProjectProps) {
                             </div>
                         </div>
                         <div>
-                            <p className="heading-secondary mb-base">Om projektet</p>
+                            <h3 className="heading-secondary mb-base">Om projektet</h3>
                             <p className="text-large max-w-prose leading-relaxed">{aboutText}</p>
                         </div>
                     </div>
                     <div className="col-span-4 col-start-7">
-                        <p className="heading-secondary mb-base">Läge</p>
+                        <h3 className="heading-secondary mb-base">Läge</h3>
                         <Map lat={59.36} lng={18.15} aspect="aspect-4/3" />
                     </div>
                 </div>
