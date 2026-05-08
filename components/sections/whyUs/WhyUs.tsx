@@ -1,10 +1,11 @@
-import FeatureBlock from "@/components/ui/featureBlock/FeatureBlock";
 import Image from "next/image";
-import livingRoom from "@/public/whyus/Interior_1_002.webp";
+import { Link } from "next-view-transitions";
+
 import PrimaryButton from "@/components/ui/buttons/PrimaryButton";
 import SecondaryButton from "@/components/ui/buttons/SecondaryButton";
+import FeatureBlock from "@/components/ui/featureBlock/FeatureBlock";
 import { cn } from "@/lib/utils";
-import { Link } from "next-view-transitions";
+import livingRoom from "@/public/whyus/Interior_1_002.webp";
 
 export default function WhyUs() {
     return (
