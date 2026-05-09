@@ -100,7 +100,7 @@
         @apply bg-surface text-background rounded-xl p-lg sm:p-lg md:p-lg lg:p-xl xl:p-xl;
     }
     .inner-section-p {
-        @apply p-md sm:p-md md:p-md lg:p-lg xl:p-lg;
+        @apply p-lg sm:p-lg md:p-lg lg:p-xl xl:p-xl;
     }
     .gap-small {
         @apply gap-sm sm:gap-sm md:gap-sm lg:gap-md xl:gap-md;

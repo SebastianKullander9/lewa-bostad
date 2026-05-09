@@ -1,38 +1,22 @@
-import { ArrowUpRight, Mail, MapPin, Phone } from "lucide-react";
-import Image from "next/image";
-import { Link } from "next-view-transitions";
+import {
+    IconAtSignFill32,
+    IconEnvelopeFill32,
+    IconPhoneFill32,
+    IconPinFill32,
+} from "nucleo-core-fill-32";
 
-import PrimaryButton from "@/components/ui/buttons/PrimaryButton";
 import ContactForm from "@/components/ui/forms/ContactForm";
-import project1 from "@/public/projects/glansbaggen/Glansbaggen_exterior_1_002.webp";
-import project2 from "@/public/projects/glansbaggen/Glansbaggen_Vardagsrum_001.webp";
 
-import ProjectImage from "../callToAction/projects/ProjectImage";
 import ContactInfoItem from "./ContactInfoItem";
-
-const EXAMPLE_PROJECTS = [
-    {
-        title: "Södra Hammarbyhamnen",
-        location: "Stockholm",
-        status: "Kommande",
-        image: project1,
-    },
-    {
-        title: "Lidingö Strand",
-        location: "Lidingö",
-        status: "Tillgänglig",
-        image: project2,
-    },
-];
 
 export default function Contact() {
     return (
         <section className="section-x-p">
-            <div
-                className="inner-section-style grid grid-cols-12 gap-large"
-                style={{ minHeight: "calc(100vh - var(--header-height) - var(--section-y-p))" }}
-            >
-                <div className="col-span-12 md:col-span-6 flex flex-col justify-between">
+            <div className="inner-section-style grid grid-cols-12">
+                <div className="col-span-12 md:col-span-3">
+                    <p className="eyebrow">Kontakta oss</p>
+                </div>
+                <div className="col-span-12 md:col-span-6 md:col-start-4 flex flex-col gap-large xl:gap-0">
                     <div>
                         <p className="heading-primary mb-md">Låt oss höras</p>
                         <p className="max-w-prose text-large">
@@ -40,38 +24,19 @@ export default function Contact() {
                             bara har en fråga. Hör av dig — vi svarar snabbt.
                         </p>
                     </div>
-                    <div className="flex flex-col gap-xl">
-                        <ContactInfoItem Icon={Mail} text={["lewa.bostad@lewa.se"]} />
-                        <ContactInfoItem Icon={Phone} text={["+46 12 345 67"]} />
+                    <div className="flex flex-col gap-xl flex-1 justify-center">
+                        <ContactInfoItem Icon={IconEnvelopeFill32} text={["lewa.bostad@lewa.se"]} />
+                        <ContactInfoItem Icon={IconPhoneFill32} text={["+46 12 345 67"]} />
                         <ContactInfoItem
-                            Icon={MapPin}
+                            Icon={IconPinFill32}
                             text={["Gustav Adolfs Torg", "103 21 STOCKHOLM"]}
                         />
                     </div>
+                </div>
+                <div className="col-span-12 md:col-span-6 md:col-start-4 xl:col-span-3 mt-8 xl:mt-0">
                     <ContactForm />
                 </div>
             </div>
         </section>
     );
 }
-
-/*
-<div className="col-span-12 md:col-span-6 flex flex-col justify-between">
-    <div>
-        <p className="heading-primary mb-md">Medan du väntar</p>
-        <p className="text-large max-w-prose">
-            Vi hör av oss så snart vi kan. Medan du väntar — ta en titt på våra
-            projekt. Kanske är ditt nästa hem redan på gång.
-        </p>
-    </div>
-    <div className="relative flex flex-col items-end">
-        <p>Visa alla projekt</p>
-        <ProjectImage
-            title="Kummelnäshöjden"
-            location="Nacka"
-            image={project2}
-            status="Genomförd"
-        />
-    </div>
-</div>
-*/

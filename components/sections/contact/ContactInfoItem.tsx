@@ -1,19 +1,19 @@
 import { LucideIcon } from "lucide-react";
 
 interface ContactInfoItemProps {
-    Icon: LucideIcon;
+    Icon: ComponentType<SVGProps<SVGSVGElement>>;
     text: string[];
 }
 
 export default function ContactInfoItem({ Icon, text }: ContactInfoItemProps) {
     return (
         <div className="flex flex-row items-center gap-md">
-            <div className="bg-tertiary text-surface bg-background inline-block p-md rounded-full">
-                <Icon strokeWidth={1.8} size={22} />
+            <div className="bg-tertiary text-surface bg-background inline-block p-sm lg:p-md rounded-full">
+                <Icon size={22} className="scale-80 lg:scale-100" />
             </div>
             <div>
                 {text.map((str, index) => (
-                    <p key={index} className="text-lg">
+                    <p key={index} className="text-large">
                         {str}
                     </p>
                 ))}
