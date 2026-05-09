@@ -1,6 +1,8 @@
 @theme {
-    --font-heading: "Overused Grotesk", sans-serif;
-    --font-geist: "Geist", sans-serif;
+    --font-heading: "Cinzel", serif;
+    --font-geist: "Poppins", sans-serif;
+    /*--font-heading: "Overused Grotesk", sans-serif;*/
+    /*--font-geist: "Geist", sans-serif;*/
     --font-geist-mono: "Geist Mono", monospace;
 
     --color-olive-900: #2b3329;

@@ -23,8 +23,8 @@ export default function Header() {
             <header className="no-section-p hidden lg:flex flex-row justify-between h-(--header-height) pt-lg relative">
                 <Link href="/" className="flex flex-row">
                     <div className="pt-md">
-                        <h1 className="text-3xl font-extrabold tracking-tight leading-2">LEWA</h1>
-                        <h1 className="text-3xl font-extrabold tracking-tight">BOSTAD</h1>
+                        <h1 className="text-3xl tracking-tight leading-4">LEWA</h1>
+                        <h1 className="text-[22px] tracking-tight">BOSTAD</h1>
                     </div>
                 </Link>
 
