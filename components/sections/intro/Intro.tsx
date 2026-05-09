@@ -1,11 +1,12 @@
 import Image from "next/image";
-import img1 from "@/public/intro/Interior_1_002.webp";
-import img2 from "@/public/intro/Glansbaggen_exterior_3_002.webp";
-import img3 from "@/public/intro/Interior_2_002.webp";
+import { Link } from "next-view-transitions";
+import { IconArrowBoldDownFill32 } from "nucleo-core-fill-32";
+
 import PrimaryButton from "@/components/ui/buttons/PrimaryButton";
 import SecondaryButton from "@/components/ui/buttons/SecondaryButton";
-import { IconArrowBoldDownFill32 } from "nucleo-core-fill-32";
-import { Link } from "next-view-transitions";
+import img2 from "@/public/intro/Glansbaggen_exterior_3_002.webp";
+import img1 from "@/public/intro/Interior_1_002.webp";
+import img3 from "@/public/intro/Interior_2_002.webp";
 
 const shortText =
     "Lewa Bostad bygger arkitektritade radhus och parhus med omsorgsfull design. Men framförallt skapar vi trivsamma kvarter där livet får ta plats – både innanför tröskeln och utanför dörren.";
@@ -15,10 +16,10 @@ const longText = "Ett hem är så mycket mer än det som ryms inom fyra väggar.
 const Buttons = () => (
     <div className="flex flex-row justify-between items-end">
         <div className="flex flex-row gap-md">
-            <Link href="/vara-projekt">
+            <Link href="/vara-projekt" className="min-w-30">
                 <PrimaryButton label="Våra projekt" />
             </Link>
-            <Link href="/om-oss">
+            <Link href="/om-oss" className="min-w-30">
                 <SecondaryButton label="Läs mer" />
             </Link>
         </div>

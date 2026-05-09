@@ -51,10 +51,10 @@ export default function WhyUs() {
                             "col-span-12 lg:col-span-4   lg:row-start-7 lg:col-start-4",
                         )}
                     >
-                        <Link href="/kontakt" className="md:max-w-35">
+                        <Link href="/kontakt" className="min-w-30 md:max-w-35">
                             <PrimaryButton label="Kontakta oss" />
                         </Link>
-                        <Link href="/vara-projekt" className="md:max-w-35">
+                        <Link href="/vara-projekt" className="min-w-30 md:max-w-35">
                             <SecondaryButton label="Våra projekt" />
                         </Link>
                     </div>

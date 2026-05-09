@@ -1,8 +1,9 @@
 import Image from "next/image";
-import owner from "@/public/about/temporary-owner.jpg";
+import { Link } from "next-view-transitions";
+
 import PrimaryButton from "@/components/ui/buttons/PrimaryButton";
 import SecondaryButton from "@/components/ui/buttons/SecondaryButton";
-import { Link } from "next-view-transitions";
+import owner from "@/public/about/temporary-owner.jpg";
 
 export default function CallToAbout() {
     return (
@@ -11,7 +12,7 @@ export default function CallToAbout() {
                 <div className="col-span-12 md:col-span-3 md:row-start-1">
                     <p className="eyebrow-light text-surface">Om oss</p>
                 </div>
-                <div className="col-span-12 md:col-span-7 md:col-start-4 md:row-start-1 mb-12 md:mb-0">
+                <div className="col-span-12 md:col-span-7 md:col-start-4 md:row-start-1 mb-base md:mb-0 md:mb-0">
                     <p className="text-extralarge italic">
                         &rdquo;Lewa Bostad skapar hem att trivas i – designade för vardagens små
                         stunder och framtidens stora ögonblick.&rdquo;
@@ -26,7 +27,7 @@ export default function CallToAbout() {
                         className="object-cover w-full h-full rounded-xl"
                     />
                 </div>
-                <div className="col-span-12 max-w-prose md:col-span-7 md:col-start-4 md:row-start-2 flex flex-col justify-between gap-base">
+                <div className="col-span-12 max-w-prose md:col-span-7 md:col-start-4 md:row-start-2 flex flex-col justify-between gap-base mt-base md:mt-0">
                     <p className="max-w-prose text-large">
                         Vi grundades med övertygelsen att fler människor förtjänar ett hem byggt för
                         att hålla — inte bara i år, utan i generationer. Trä är vårt material,
