@@ -1,7 +1,11 @@
-import { LucideIcon } from "lucide-react";
+import { ComponentType, SVGProps } from "react";
+
+interface IconProps extends SVGProps<SVGSVGElement> {
+    size?: number;
+}
 
 interface ContactInfoItemProps {
-    Icon: ComponentType<SVGProps<SVGSVGElement>>;
+    Icon: ComponentType<IconProps>;
     text: string[];
 }
 
