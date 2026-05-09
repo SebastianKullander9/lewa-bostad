@@ -41,7 +41,7 @@ const imageVisibility = ["", "hidden sm:block", "hidden md:block"];
 
 export default function Intro() {
     return (
-        <section className="section-x-p">
+        <section className="section-x-p section-mt">
             <div className="inner-section-style grid grid-cols-24">
                 <div className="col-span-1 hidden md:flex items-end ">
                     <IconArrowBoldDownFill32 className="rounded-xl" />
