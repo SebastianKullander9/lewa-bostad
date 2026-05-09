@@ -117,6 +117,9 @@
     .mb-base {
         @apply mb-md sm:mb-md md:mb-md lg:mb-lg xl:mb-lg;
     }
+    .p-base {
+        @apply p-md sm:p-md md:p-md lg:p-lg xl:p-lg;
+    }
     .heading-primary {
         font-family: var(--font-heading);
         @apply text-4xl sm:text-4xl md:text-4xl lg:text-5xl xl:text-6xl uppercase font-extrabold tracking-tight;

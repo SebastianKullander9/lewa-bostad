@@ -1,8 +1,10 @@
 "use client";
 
+import { ArrowUpRight, ChevronDown } from "lucide-react";
 import { Link } from "next-view-transitions";
-import { ChevronDown, ArrowUpRight } from "lucide-react";
-import { useState, useEffect } from "react";
+import { useEffect, useState } from "react";
+
+import PrimaryButton from "../buttons/PrimaryButton";
 
 export default function Header() {
     const [scrollThreshold, setScrollThreshold] = useState(false);
@@ -18,7 +20,7 @@ export default function Header() {
 
     return (
         <>
-            <header className="no-section-p hidden lg:flex flex-row justify-between h-(--header-height) pt-lg items-start">
+            <header className="no-section-p hidden lg:flex flex-row justify-between h-(--header-height) pt-lg relative">
                 <Link href="/" className="flex flex-row">
                     <div className="pt-md">
                         <h1 className="text-3xl font-extrabold tracking-tight leading-2">LEWA</h1>
@@ -26,7 +28,7 @@ export default function Header() {
                     </div>
                 </Link>
 
-                <nav className="flex flex-row gap-3xl text-md">
+                <nav className="flex flex-row gap-3xl text-md absolute left-1/2 -translate-x-1/2">
                     <Link href="/vara-projekt" className="hover-border">
                         Våra projekt
                     </Link>
@@ -37,11 +39,6 @@ export default function Header() {
                         Kontakt
                     </Link>
                 </nav>
-
-                <div className="flex flex-row gap-xs h-fit items-center">
-                    <p className="">Anmäl intresse</p>
-                    <ArrowUpRight size={24} />
-                </div>
 
                 <div className="flex flex-row gap-xs h-fit items-center">
                     <p>Svenska</p>
@@ -55,7 +52,7 @@ export default function Header() {
 					${scrollThreshold ? "opacity-100" : "opacity-0 pointer-events-none"}
 				`}
             >
-                <div className="container bg-white mx-auto rounded-md py-sm px-xl flex flex-row item items-center justify-between">
+                <div className="container bg-white mx-auto rounded-xl py-sm px-xl flex flex-row item items-center justify-between">
                     <Link href="/" className="flex flex-col -space-y-3.5">
                         <h1 className="text-xl font-extrabold">LEWA</h1>
                         <h1 className="text-xl font-extrabold">BOSTAD</h1>

@@ -5,8 +5,6 @@ export async function GET(request: Request) {
     const lat = searchParams.get("lat");
     const lng = searchParams.get("lng");
 
-    console.log(token);
-    console.log("test");
     const url = `https://tiles.stadiamaps.com/static/alidade_smooth.png?center=${lat},${lng}&zoom=11&size=1200x500@2x&api_key=${token}`;
 
     const res = await fetch(url, { cache: "no-store" });

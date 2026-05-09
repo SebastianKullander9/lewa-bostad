@@ -1,20 +1,22 @@
 "use client";
 
-import ObjInfo from "./objInfo";
-import { useState } from "react";
 import {
-    IconGridLayoutFill32,
     IconBed2Fill32,
-    IconCalendarFill32,
     IconCalendarCheck2Fill32,
+    IconCalendarFill32,
+    IconGridLayoutFill32,
     IconHouse4Fill32,
     IconLeaves3Fill32,
 } from "nucleo-core-fill-32";
-import Map from "../../../ui/map/Map";
-import { ProjectType } from "@/types/project.type";
-import ShowcaseGrid from "../showcaseGrid/ShowcaseGrid";
-import GalleryShowcase from "../galleryShowcase/GalleryShowcase";
+import { useState } from "react";
+
 import PrimaryButton from "@/components/ui/buttons/PrimaryButton";
+import { ProjectType } from "@/types/project.type";
+
+import Map from "../../../ui/map/Map";
+import GalleryShowcase from "../galleryShowcase/GalleryShowcase";
+import ShowcaseGrid from "../showcaseGrid/ShowcaseGrid";
+import ObjInfo from "./objInfo";
 
 interface ProjectProps {
     project: ProjectType;
@@ -46,7 +48,7 @@ export default function Project({ project, priority }: ProjectProps) {
                 <div className="flex flex-col gap-base lg:gap-0 lg:flex-row justify-between">
                     <div className="flex flex-col gap-base">
                         <TitleTag className="heading-primary">{title}</TitleTag>
-                        <p className="text-large font-bo max-w-prose">{introText}</p>
+                        <p className="text-large max-w-prose">{introText}</p>
                     </div>
                     <div className="flex flex-col justify-end z-9999">
                         <GalleryShowcase
